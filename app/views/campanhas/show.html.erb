@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @campanha.nome %>
+</p>
+
+<p>
+  <b>Prêmio:</b>
+  <%= @campanha.premio %>
+</p>
+
+<p>
+  <b>Df:</b>
+  <%= @campanha.df %>
+</p>
+
+<p>
+  <b>Tweet:</b>
+  <%= @campanha.tweet %>
+</p>
+
+<%= link_to 'Edit', edit_campanha_path(@campanha) %> |
+<%= link_to 'Back', campanhas_path %>
