@@ -1,0 +1,14 @@
+h1. Twitteiro
+
+h2. Resolver as dependências do aplicativo
+* cd no diretório do projeto e execute $ bundle install - Isso instalará todas as dependencias do projeto.
+* Execute $ rake db:create e rake db:migrate pra migrar o BD.
+
+h2. Iniciar o servidor
+* cd no diretório do projeto e execute $ thin start -d, em seguida acesse "http://localhost:3000/":http://localhost:3000/
+
+h2. Tarefas do app
+
+* rake routes - Veja todas as urls do app
+
+
