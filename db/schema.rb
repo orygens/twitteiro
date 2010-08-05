@@ -10,15 +10,6 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100804025019) do
-
-  create_table "campanhas", :force => true do |t|
-    t.string   "nome"
-    t.string   "premio"
-    t.datetime "df"
-    t.text     "tweet"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 0) do
 
 end
