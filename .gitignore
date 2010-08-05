@@ -7,5 +7,9 @@
 *.pid
 *.log
 *.DS_Store
-*.bundle
+.bundle
 *.rspec
+db/*.sqlite3
+log/*.log
+tmp/**/*
+*.db
