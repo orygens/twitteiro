@@ -2,8 +2,7 @@ class OauthController < ApplicationController
   def start
     request_token = client.get_request_token
     session[:request_token] = request_token
-    redirect_to request_token.authorize_path
-    )
+    redirect_to request_token.authorize_url
   end
   
   def callback
@@ -15,8 +14,8 @@ class OauthController < ApplicationController
     @consumer = OAuth::Consumer.new(
       'bHU901qt0sXxPslj6nGukQ','MM1E9xzbz5YvC7OrlZwV80eQEYPjCWeF6t5xE2sCprk',
       :site => 'https://twitter.com',
-      :authorize_path => '/oauth/authorize',
-      :access_token_path => '/oauth/access_token'
+      :authorize_url => 'https://twitter.com/oauth/authorize',
+      :access_token_url => 'https://twitter.com/oauth/access_token'
     )
   end
 end

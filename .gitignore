@@ -4,3 +4,8 @@
 *.rbc
 *.gem
 *.livereload
+*.pid
+*.log
+*.DS_Store
+*.bundle
+*.rspec
