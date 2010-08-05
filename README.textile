@@ -9,7 +9,16 @@ h2. Iniciar o servidor
 
 h2. Tarefas do app
 
-* rake routes - Veja todas as urls do app
+* rake routes - Mostra todas as urls do app.
+* rake spec - Executa a suíte de testes com RSpec.
+* rake test - Executa a suíte de testes com Test::Unit e Shoulda.
 * rails c - Abre um console interativo do Ruby com o aplicativo carregado.
 
-h2. ©2010 Orygens.com. Todos os direitos reservados.
+h2. TO-DO
+
+* Terminar toda a estrutura de testes.
+* Criar interface de usuário.
+* Criar sistema de autenticação pra o admin.
+* Mostrar toda a informação necessária ao administrador.
+
+h3. ©2010 Orygens.com. Todos os direitos reservados.

@@ -1,10 +1,10 @@
-body {background-color:#a2e89d;padding:40px 190px;}
+body {background-color:#a2e89d;padding:40px 230px;}
 body, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
   line-height: 18px;
 }
-h1 {font-family:Helvetica;font-size:40px;}
+h1 {font-family:Helvetica;font-size:40px;color:#23a0c2;}
 p {font-family:Sans-serif;font-size: 17px;}
 img {border:none;}
 input, textarea { 
@@ -39,9 +39,9 @@ input:focus, textarea:focus {border-color: #C9C9C9;-webkit-box-shadow: rgba(0, 0
 
 div.field, div.actions {margin-bottom: 10px;}
 pre {background-color: #eee;padding: 10px;font-size: 11px;}
-a { color: #666; background-color:#edece9; margin:6px;}
+a { font-size: 20px;color: #666; margin:6px;}
 a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
+a:hover { color: #fff; background-color:#666; }
 
 #notice {color: green;}
 
