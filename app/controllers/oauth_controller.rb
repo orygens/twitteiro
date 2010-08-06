@@ -7,8 +7,8 @@ class OauthController < ApplicationController
   end
   
   def callback
-    access_token = client.get_access_token
-    render :json => access_token_get('/account/verify_credentials')
+    @access_token = client.get_access_token(:oauth_verifier => params[:oauth_verifier])
+    render :json => access_token_get('https://twitter.com/account/verify_credentials.json')
   end
   
   protected 
