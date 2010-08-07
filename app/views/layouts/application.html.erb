@@ -8,15 +8,21 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+  <div class="logo">
+    <h1> Twitteiro </h1><p> Engage seus clientes no Twitter</p>
+  </div>
 
-<%= yield %>
+  <%= yield %>
 
+<br>
 <br>
 <br>
 <%= link_to 'Início', root_path %>
 <%= link_to 'Usuários', usuarios_path %>
 <%= link_to 'Admin' , admin_path %>
+
 <div class='rodape'>
   <p>&copy; 2010 Orygens.com. Todos os direitos reservados.</p>
+</div>
 </body>
 </html>

@@ -1,14 +1,10 @@
 body {background-color:#a2e89d;padding:40px 230px;}
-body, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
-  line-height: 18px;
-}
-h1 {font-family:Helvetica;font-size:40px;color:#23a0c2;}
+body, ol, ul, td {font-family: verdana, arial, helvetica, sans-serif;font-size:13px;line-height:18px;}
+h1 {font-family:Helvetica;font-size:45px;color:#23a0c2;}
 p {font-family:Sans-serif;font-size: 17px;}
 img {border:none;}
-input, textarea { 
-	padding: 9px;
+input, textarea {
+  padding: 9px;
 	border: solid 1px #E5E5E5;
 	outline: 0;
 	font: normal 13px/100% Verdana, Tahoma, sans-serif;
@@ -18,9 +14,7 @@ input, textarea {
 	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
 	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
 	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
-	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
-	}
-
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;}
 textarea {width: 400px;max-width: 400px;height: 150px;line-height: 150%;}
 input:hover, textarea:hover,
 input:focus, textarea:focus {border-color: #C9C9C9;-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;}
@@ -37,36 +31,18 @@ input:focus, textarea:focus {border-color: #C9C9C9;-webkit-box-shadow: rgba(0, 0
 	cursor: pointer;
 }
 
-div.rodape {text-align:center;}
+div.logo p {}
+div.container {padding: 9px;}
+div.rodape {width: 970px;text-align:center;border:1px solid #fff;margin:30px;background-color:#fff;border-radius:14px;-webkit-border-radius:14px;-moz-border-radius:14px;}
+div.rodape p {font-family: Trebuchet ms;}
 div.dados {text-align:center;}
 div.field, div.actions {margin-bottom: 10px;}
 pre {background-color: #eee;padding: 10px;font-size: 11px;}
-a { font-size: 20px;color: #666; margin:6px;}
+a { font-family:sans serif; font-size: 20px;color: #666; margin:6px;}
 a:visited { color: #666; }
-a:hover { color: #fff; background-color:#666; }
-
+a:hover {color:#fff;background-color:#23a0c2;text-decoration:none;}
 #notice {color: green;}
-
-.field_with_errors {padding: 2px;background-color: red;display: table;}
-
-#error_explanation {
-  width: 450px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 0;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-}
-
-#error_explanation h2 {
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px;
-  margin-bottom: 0px;
-  background-color: #c00;
-  color: #fff;
-}
-
+.field_with_errors {padding:2px;background-color:red;display:table;}
+#error_explanation {width:450px;border:2px solid red;padding:7px;padding-bottom:0;margin-bottom:20px;background-color:#f0f0f0;}
+#error_explanation h2 {text-align: left;font-weight: bold;padding: 5px 5px 5px 15px;font-size: 12px;margin: -7px;margin-bottom: 0px;background-color: #c00;color: #fff;}
 #error_explanation ul li {font-size: 12px;list-style: square;}
