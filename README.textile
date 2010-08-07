@@ -9,6 +9,8 @@ h2. Iniciar o servidor
 
 h2. Tarefas do app
 
+* rake about - Mostra informações do ambiente do projeto.
+* rake stats - Mostra estatísticas do código do app.
 * rake routes - Mostra todas as urls do app.
 * rake spec - Executa a suíte de testes com RSpec.
 * rake test - Executa a suíte de testes com Test::Unit e Shoulda.
