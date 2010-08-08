@@ -5,6 +5,7 @@ gem 'wirble'
 
 group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'json'
   gem 'bson_ext'
   gem 'mongo_mapper'
   gem 'thin'
