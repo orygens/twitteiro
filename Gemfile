@@ -10,7 +10,8 @@ group :development, :test do
   gem 'mongo_mapper'
   gem 'thin'
   gem 'oauth'
-  gem 'twitter' 
+  gem 'twitter'
+  gem 'formtastic', :git => "http://github.com/justinfrench/formtastic.git", :branch => "rails3"
   gem 'rspec-rails', '>=2.0.0.beta.18'
   gem 'shoulda'
 end

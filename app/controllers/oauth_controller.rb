@@ -8,7 +8,8 @@ class OauthController < ApplicationController
   end
   
   def callback
-    @access_token = client.get_access_token(:oauth_verifier => params[:oauth_verifier])
+    @request_token = client.get_request_token(:oauth_callback => 'http://localhost:3000')
+    @access_token = @request_token.get_access_token(:oauth_verifier => params[:oauth_verifier])
     @response = client.request(:get, 'https://api.twitter.com/account/verify_credentials.json', @access_token, { :scheme => :query_string })
     case @reponse
     when Net::HTTPSuccess
@@ -17,14 +18,14 @@ class OauthController < ApplicationController
         flash[:error] = "Algo deu errado com a autenticação do Twitter"
         redirect_to root_path
       end
-      @access_token = @access_token.token.save
-      @access_token = @access_token.secret.save
+      @access_token = @access_token.token
+      @access_token = @access_token.secret
     else
     end
     render :json => access_token_get('https://api.twitter.com/account/verify_credentials.json')
   end
   
-  protected 
+  private 
 
   def client
     @consumer = OAuth::Consumer.new(

@@ -6,6 +6,6 @@ Twitteiro::Application.routes.draw do |map|
 
   resource :oauth, :controller => 'oauth' do
     get :start
-    get :callback
+    post :callback
   end
 end
