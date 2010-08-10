@@ -18,11 +18,8 @@ class OauthController < ApplicationController
         flash[:error] = "Algo deu errado com a autenticação do Twitter"
         redirect_to root_path
       end
-      @access_token = @access_token.token
-      @access_token = @access_token.secret
-    else
+      render :json => access_token_get('https://api.twitter.com/account/verify_credentials.json')
     end
-    render :json => access_token_get('https://api.twitter.com/account/verify_credentials.json')
   end
   
   private 
