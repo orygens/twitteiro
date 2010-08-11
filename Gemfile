@@ -7,7 +7,7 @@ group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'json'
   gem 'bson_ext'
-  gem 'mongo_mapper'
+  gem 'mongo_mapper', '>=0.8.3'
   gem 'thin'
   gem 'oauth'
   gem 'twitter'

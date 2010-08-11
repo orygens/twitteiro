@@ -60,15 +60,15 @@ GEM
       mime-types
       treetop (>= 1.4.5)
     mime-types (1.16)
-    mongo (1.0.6)
+    mongo (1.0.7)
       bson (>= 1.0.4)
-    mongo_mapper (0.8.2)
+    mongo_mapper (0.8.3)
       activesupport (>= 2.3.4)
       jnunemaker-validatable (~> 1.8.4)
-      plucky (~> 0.3.1)
+      plucky (~> 0.3.3)
     nokogiri (1.4.3.1)
     oauth (0.4.1)
-    plucky (0.3.2)
+    plucky (0.3.3)
       mongo (~> 1.0.1)
     polyglot (0.3.1)
     rack (1.2.1)
@@ -130,7 +130,7 @@ DEPENDENCIES
   bson_ext
   formtastic!
   json
-  mongo_mapper
+  mongo_mapper (>= 0.8.3)
   oauth
   rails (= 3.0.0.rc)
   rspec-rails (>= 2.0.0.beta.18)

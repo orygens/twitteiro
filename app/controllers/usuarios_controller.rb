@@ -1,5 +1,5 @@
 class UsuariosController < ApplicationController
-  respond_to :html, :json, :rss
+  respond_to :html, :json, :rss, :atom
   
   def index
   end
