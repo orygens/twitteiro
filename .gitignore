@@ -3,6 +3,7 @@
 *~
 *.rbc
 *.gem
+*.lock
 *.livereload
 *.pid
 *.log
