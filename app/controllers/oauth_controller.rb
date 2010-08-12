@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 class OauthController < ApplicationController
   def start
-    request_token = client.get_request_token(:oauth_callback => 'http://localhost:3000')
-    session[:request_token] = request_token.token
-    session[:request_token_secret] = request_token.secret
-    redirect_to request_token.authorize_url
+    @request_token = client.get_request_token
+    session[:request_token] = @request_token.token
+    session[:request_token_secret] = @request_token.secret
+    redirect_to @request_token.authorize_url
   end
   
   def callback
@@ -18,10 +18,9 @@ class OauthController < ApplicationController
         flash[:error] = "Algo deu errado com a autenticação do Twitter"
         redirect_to root_path
       end
-      render :json => access_token_get('https://api.twitter.com/account/verify_credentials.json')
     end
   end
-  
+
   private 
 
   def client

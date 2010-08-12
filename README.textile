@@ -15,6 +15,7 @@ h2. Tarefas do app
 * rake spec - Executa a suíte de testes com RSpec.
 * rake test - Executa a suíte de testes com Test::Unit e Shoulda.
 * rake db:sessions:create e rake db:migrate - Cria a tabela sessions. Depois disso, descomente a linha 2 em config/initializers/session_store.rb. Reinicie o server. 
+* rake doc:app - Gera documentação pra o código do app. Execute se achar necessário.
 * rails c - Abre um console interativo do Ruby com o aplicativo carregado.
 
 h2. TO-DO
