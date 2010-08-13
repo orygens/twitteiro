@@ -2,12 +2,11 @@ class OauthController < ApplicationController
   def start
     @request_token = client.get_request_token
     session[:request_token] = @request_token
-    session[:request_token_secret] = @request_token
     redirect_to @request_token.authorize_url
   end
   
   def callback
-    @request_token = client.get_request_token(:oauth_callback => 'http://localhost:3000')
+    @request_token = client.get_request_token
     @access_token = @request_token.get_access_token(:oauth_verifier => params[:oauth_verifier])
   end
 
