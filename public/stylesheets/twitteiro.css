@@ -31,7 +31,7 @@ input:focus, textarea:focus {border-color: #C9C9C9;-webkit-box-shadow: rgba(0, 0
 	cursor: pointer;
 }
 
-div.logo p {font-size:13px;color:green;}
+div.logo p {font-size:14px;color:green;}
 div.container {padding: 9px;}
 div.rodape {width: 970px;text-align:center;border:1px solid #fff;margin:30px;background-color:#fff;border-radius:14px;-webkit-border-radius:14px;-moz-border-radius:14px;}
 div.rodape p {font-family: Trebuchet ms;}
