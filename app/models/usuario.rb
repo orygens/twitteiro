@@ -1,12 +1,12 @@
 class Usuario
-  include MongoMapper::Document
+  include Mongoid::Document
   
   attr_accessible :name, :location, :web, :bio
  
-  key :name, String
-  key :location, String
-  key :web, String
-  key :bio, String
+  field :name
+  field :location
+  field :web
+  field :bio
 
-  many :tweets
+  #embeds_many :tweets
 end

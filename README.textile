@@ -2,10 +2,9 @@ h1. Twitteiro
 
 h2. Resolver as dependências do aplicativo
 * cd no diretório do projeto e execute $ bundle install - Isso instalará todas as dependencias do projeto.
-* Execute $ rake db:create e rake db:migrate pra migrar o BD.
 
 h2. Iniciar o servidor
-* cd no diretório do projeto e execute $ thin start -d, em seguida acesse "http://localhost:3000/":http://localhost:3000/
+* Execute $ mongod caminho/do/db e cd no diretório do projeto e execute $ thin start -d, em seguida acesse "http://localhost:3000/":http://localhost:3000/
 
 h2. Tarefas do app
 
@@ -14,7 +13,6 @@ h2. Tarefas do app
 * rake routes - Mostra todas as urls do app.
 * rake spec - Executa a suíte de testes com RSpec.
 * rake test - Executa a suíte de testes com Test::Unit e Shoulda.
-* rake db:sessions:create e rake db:migrate - Cria a tabela sessions. Depois disso, descomente a linha 2 em config/initializers/session_store.rb. Reinicie o server. 
 * rake doc:app - Gera documentação pra o código do app. Execute se achar necessário.
 * rails c - Abre um console interativo do Ruby com o aplicativo carregado.
 
