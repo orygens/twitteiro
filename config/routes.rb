@@ -1,9 +1,9 @@
-Twitteiro::Application.routes.draw do |map|
+Twitteiro::Application.routes.draw do
   root :to => 'home#index'
   match '/login' => redirect('/oauth/start')
   match 'admin',   :to => 'admin#index'
-  match 'usuarios', :to => 'usuarios#index'
-
+  
+  resources :usuarios
   resource :oauth, :controller => 'oauth' do
     get :start
     get :callback
