@@ -2,9 +2,9 @@
 <h2> Usuários </h2>
 <% @usuarios.each do |usuario| %>
   <tr>
+    <td><%= usuario.username %></td>
     <td><%= usuario.name %></td>
     <td><%= usuario.web %></td>
     <td><%= usuario.bio %></td>
   </tr>
 <% end %>
-<%= render 'form' %>
