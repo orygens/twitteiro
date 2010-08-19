@@ -1,5 +1,7 @@
 pt-BR:
-  hello: "Olá mundo"
+  helpers:
+    submit: 
+      create: "Tweetar!"
 
   date:
     formats:
