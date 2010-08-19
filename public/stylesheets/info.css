@@ -1,4 +1,4 @@
-body {background-color:#e3e3e3;padding:5px 230px;}
+body {background-color:#e3e3e3;margin:50px;padding:5px 230px;}
 body, ol, ul, td {font-family: verdana, arial, helvetica, sans-serif;font-size:13px;line-height:18px;}
 h1 {font-family:Helvetica;font-size:45px;color:#23a0c2;}
 p {font-family:Sans-serif;font-size: 17px;}
@@ -42,6 +42,7 @@ label {font-size:14px;}
 .logo p {font-size:14px;color:green;}
 .logo h1 {font-weight: bold;}
 .container {padding: 9px;}
+
 .rodape p {font-family: arial; font-weight: bold;float:left; font-size:14px;font-family: Sans serif;}
 .rodape p.copy {float:right; font-size:14px;font-family: Sans serif;border-left:none;}
 .rodape a {color:#1836ab;font-size;12px;background-color:none;text-decoration:none;}
