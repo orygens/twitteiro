@@ -21,4 +21,4 @@ describe UsuariosController do
       assigns(:usuario).should be(mock_usuario)
     end
   end
-
+end

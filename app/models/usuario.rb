@@ -1,13 +1,14 @@
 class Usuario
   include Mongoid::Document
   
-  attr_accessible :username, :name, :location, :web, :bio
- 
+  field :vezes, :type => Integer
+  validates_numericality_of :vezes, :integer
+
   field :username, :type => String
   field :name, :type => String
   field :location, :type => String
   field :web, :type => String
   field :bio, :type => String
 
-  #embeds_many :tweets
+  embeds_many :tweets
 end

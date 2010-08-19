@@ -1,6 +1,11 @@
-<h2> Interface do administrador </h2>
-<div class="dados">
-  <p>Todos os Usuários</p>
-  <p>Todos os Retwitteiros</p>
-  <p>Tweets Cadastrados (Retwittados)</p>
-</div>
+<% if admin_logado %>
+  <div align='right'>
+    <h2> Interface do administrador </h2>
+  </div>
+  <div class="dados">
+    <h3>Todos os Usuários: <%= @usuarios.count %></h3>
+    <h3>Todos os Retwitteiros:</h3>
+    <h3>Tweets Cadastrados (Retwittados):</h3>
+  </div>
+<% else %>
+<% end %>

@@ -134,7 +134,7 @@ pt-BR:
       two_words_connector: " e "
       last_word_connector: " e "
     
-  activerecord:
+  activemodel:
     errors:
       template:
         header:
@@ -152,7 +152,7 @@ pt-BR:
         too_long: "é muito longo (máximo: %{count} caracteres)"
         too_short: "é muito curto (mínimo: %{count} caracteres)"
         wrong_length: "não possui o tamanho esperado (%{count} caracteres)"
-        taken: "já está em uso"
+        taken: "Mensagem já tweetada"
         not_a_number: "não é um número"
         not_an_integer: "não é um número inteiro"
         greater_than: "deve ser maior do que %{count}"

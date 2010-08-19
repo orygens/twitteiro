@@ -1,15 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-  <title>Twitteiro - Engage seus clientes no Twitter</title>
+  <title>Twitteiro - Mobilize seus clientes no Twitter</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "rails" %>
   <%= metatags %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <div class="logo">
-    <h1>Twitteiro</h1><p>Engage seus clientes no Twitter</p>
+  <div align='right'>
+  <div class='topmenu'>
+    <%= link_to image_tag("login.png"), login_path %>
+  </div>
+</div>
+  <div class='logo'>
+    <h1>TWITTEIRO</h1><p>Mobilize seus clientes no Twitter</p>
   </div>
 
   <%= yield %>
@@ -17,9 +22,12 @@
 <br>
 <br>
 <br>
-<%= link_to 'Início', root_path %>
-<%= link_to 'Usuários', usuarios_path %>
-<%= link_to 'Admin' , admin_path %>
+<div class='links'>
+  <%= link_to 'Início', root_path %>
+  <%= link_to 'Tweets', tweets_path %>
+  <%= link_to 'Usuários', usuarios_path %>
+  <%= link_to 'Admin' , admin_path %>
+</div>
 
 <div class='rodape'>
   <p>&copy; 2010 Orygens.com. Todos os direitos reservados.</p>

@@ -3,6 +3,7 @@ Twitteiro::Application.routes.draw do
   match '/login' => redirect('/oauth/start')
   match 'admin',   :to => 'admin#index'
   
+  resources :tweets
   resources :usuarios
   resource :oauth, :controller => 'oauth' do
     get :start

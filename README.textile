@@ -18,7 +18,7 @@ h2. Tarefas do app
 
 h2. TO-DO
 
-* Terminar toda a estrutura de testes.
+* Adicionar páginas: 'FAQ', 'Sobre', 'Contato', 'Privacidade' e 'Termos de Uso'.
 * Criar interface de usuário.
 * Criar sistema de autenticação pra o admin.
 * Mostrar toda a informação necessária ao administrador.
