@@ -3,12 +3,9 @@ class TweetsController < ApplicationController
   
   def index
     @tweets = Tweet.all
-    respond_with @tweets 
-  end
-
-  def new
     @tweet = Tweet.new
-    respond_with @tweet
+    respond_with @tweets, @tweet
+
   end
 
   def create
