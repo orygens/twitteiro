@@ -1,1 +1,10 @@
 <h2>Twitteiro - Fale conosco</h2>
+
+<div id='contato'>
+  <%= form_for :contato do |f| %>
+    <p>Nome: <%= f.text_field :nome %></p>
+    <p>Seu email: <%= f.text_field :email %></p>
+    <p>Mensagem: <%= f.text_area :mensagem %></p>
+    <%= f.submit 'Enviar' %>
+  <% end %>
+</div>

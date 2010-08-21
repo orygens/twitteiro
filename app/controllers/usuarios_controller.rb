@@ -1,5 +1,5 @@
 class UsuariosController < ApplicationController
-  respond_to :html, :json, :rss, :atom
+  respond_to :html, :json, :atom
   
   def index
     @usuarios = Usuario.all
@@ -10,5 +10,4 @@ class UsuariosController < ApplicationController
     @usuario = Usuario.find(params[:id])
     respond_with @usuario
   end
-
 end

@@ -1,6 +1,10 @@
 class Usuario
   include Mongoid::Document
   
+  def to_param
+    permalink
+  end 
+
   field :vezes, :type => Integer
   validates_numericality_of :vezes, :integer
 

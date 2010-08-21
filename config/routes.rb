@@ -1,5 +1,6 @@
 Twitteiro::Application.routes.draw do
   root :to => 'home#index'
+  #match '/:id',    :to => 'usuarios#show'
   match 'admin',   :to => 'admin#index'
   match 'sobre',   :to => 'info#sobre'
   match 'faq',     :to => 'info#faq'
@@ -9,7 +10,7 @@ Twitteiro::Application.routes.draw do
 
   resources :tweets
   resources :usuarios
-  resource :oauth, :controller => 'oauth' do
+  resource :oauth, :controller => 'tweets' do
     get :start
     get :callback
   end
