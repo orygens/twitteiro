@@ -11,7 +11,7 @@ Twitteiro::Application.routes.draw do
   resources :tweets
   resources :usuarios
   resource :oauth, :controller => 'tweets' do
-    get :start
+    get :connect
     get :callback
   end
 end

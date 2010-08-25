@@ -6,8 +6,6 @@ class Usuario
   end 
 
   field :vezes, :type => Integer
-  validates_numericality_of :vezes, :integer
-
   field :username, :type => String
   field :name, :type => String
   field :location, :type => String
@@ -15,4 +13,7 @@ class Usuario
   field :bio, :type => String
 
   embeds_many :tweets
+
+  validates_numericality_of :vezes, :integer
+  validates_uniqueness_of :username
 end
