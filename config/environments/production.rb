@@ -3,7 +3,7 @@ Twitteiro::Application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
   config.action_dispatch.x_sendfile_header = "X-Sendfile"
-
+  
   # See everything in the log (default is :info)
   # config.log_level = :debug
 
@@ -13,6 +13,7 @@ Twitteiro::Application.configure do
   config.serve_static_assets = false
   # Enable serving of images, stylesheets, and javascripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
+  config.active_support.deprecation => :notify
   config.action_mailer.raise_delivery_errors = true
   config.threadsafe!
   config.i18n.fallbacks = true
