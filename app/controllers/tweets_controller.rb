@@ -5,7 +5,6 @@ class TweetsController < ApplicationController
     @tweets = Tweet.all
     @tweet = Tweet.new
     respond_with @tweets, @tweet
-
   end
 
   def create
@@ -32,6 +31,8 @@ class TweetsController < ApplicationController
       format.html { redirect_to(tweets_url) }
       format.xml  { head :ok }
     end
+
+    client.status_destroy @tweet
   end
 
   def connect

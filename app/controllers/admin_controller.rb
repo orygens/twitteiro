@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 class AdminController < ApplicationController
   respond_to :html
 
@@ -11,7 +10,7 @@ class AdminController < ApplicationController
     admin = Admin.find_by_password(params[:password])
     if admin
       session[:user] = user.id
-      flash[:message] = "Você logou, administrador!"
+      flash[:message] = "Administrador logado!"
       redirect_to admin_path
     else
       flash[:warning] = "Senha incorreta, tente de novo, administrador."
@@ -21,7 +20,7 @@ class AdminController < ApplicationController
  
   def destroy
     session[:user] = nil
-    flash[:message] = 'Você saiu, administrador'
+    flash[:message] = 'Administrador saiu.'
     redirect_to root_path
   end
 end

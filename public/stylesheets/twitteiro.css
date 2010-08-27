@@ -53,6 +53,17 @@ pre {background-color: #eee;padding: 10px;font-size: 11px;}
 .links a { font-family:sans serif; font-size: 20px;color: #666; margin:6px;}
 .links a:visited { color: #666; }
 .links a:hover {color:#fff;background-color:#23a0c2;text-decoration:none;}
+a.botao {background: #0872ba url('../images/button-bg-out.png') repeat-x left top;
+  color: #fff;
+  display: block;
+  float: center;
+  width: 170px;
+  font-weight: bold;
+  margin: 0 0 1em 0;
+  padding: 1em;
+  text-decoration: none;
+  text-shadow:none;}
+a.botao:hover {background-image: url('../images/button-bg-over.png');}
 #notice {color: green;}
 .field_with_errors {padding:2px;background-color:red;display:table;}
 #error_explanation {width:450px;border:2px solid red;padding:7px;padding-bottom:0;margin-bottom:20px;background-color:#f0f0f0;}

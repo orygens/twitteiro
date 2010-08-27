@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.0.rc'
+gem 'wirble'
 
 group :development, :test do
   gem 'json'
@@ -10,7 +11,7 @@ group :development, :test do
   gem 'thin'
   gem 'mail_form'
   gem 'twitter'
-  gem 'rspec-rails', '2.0.0.beta.18'
+  gem 'rspec-rails', '2.0.0.beta.20'
   gem 'mongoid-rspec'
   gem 'shoulda'
 end
