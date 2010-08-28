@@ -1,4 +1,5 @@
 class TweetsController < ApplicationController
+  before_filter :authenticate
   respond_to :html, :json, :atom
   
   def index
@@ -33,19 +34,5 @@ class TweetsController < ApplicationController
     end
 
     client.status_destroy @tweet
-  end
-
-  def connect
-    client.authorize_from_access('access token', 'access secret')    
-  end
-  
-  def callback
-    client = Twitter::Base.new(client)
-  end
-
-  private 
-
-  def client
-    @client = Twitter::OAuth.new('bV5Lxcdn3QROOt50wdFE8g', 'xHRwfCKAyU9d49vz50K1F57VDpuZ2bocS0eWeQFE2V4')
   end
 end

@@ -50,9 +50,6 @@ label {font-size:14px;}
 .dados {text-align:center;}
 .field, div.actions {margin-bottom: 10px;}
 pre {background-color: #eee;padding: 10px;font-size: 11px;}
-.links a { font-family:sans serif; font-size: 20px;color: #666; margin:6px;}
-.links a:visited { color: #666; }
-.links a:hover {color:#fff;background-color:#23a0c2;text-decoration:none;}
 a.botao {background: #0872ba url('../images/button-bg-out.png') repeat-x left top;
   color: #fff;
   display: block;
