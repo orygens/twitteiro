@@ -37,6 +37,8 @@ a {color: gray;}
 a:hover {background-color:#edece9;}
 label {font-size:14px;}
 .topmenu {text-align:right; float:right; margin-right: auto; padding:5px;width: 370px;border:1px solid #fff;margin:20px;background-color:#fff;border-radius:7px;-webkit-border-radius:7px;-moz-border-radius:7px;}
+.topmenu a {background-color: none;text-decoration:none;color: green;}
+.topmenu a:hover {background-color: #fff;text-decoration:underline;}
 .mensagens {width:750px;}
 .mensagens td {font-size:16px;}
 .mensagens a {font-size:10px;}

@@ -1,7 +1,7 @@
 class TweetsController < ApplicationController
   before_filter :authenticate
-  respond_to :html, :json, :atom
-  
+  respond_to :html, :xml
+
   def index
     @tweets = Tweet.all
     @tweet = Tweet.new

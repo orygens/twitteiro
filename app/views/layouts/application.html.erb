@@ -25,7 +25,7 @@
 <body>
   <% if signed_in? %>
     <div class='topmenu'>
-      Olá, <%= client %>, <%= link_to 'Perfil', root_url %>, <%= link_to 'Sair', sessions_url, :method => :delete %>
+      Olá, <%= client %> <%= link_to 'Perfil', root_url %> <%= link_to 'Sair', sessions_url, :method => :delete %>
     </div>
   <% end %>
 
