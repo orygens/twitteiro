@@ -9,19 +9,10 @@ class TweetsController < ApplicationController
   end
 
   def create
-    @tweet = Tweet.new(params[:tweet])
-
-    respond_to do |format|
-      if @tweet.save
-        format.html { redirect_to(tweets_url, :notice => 'Mensagem criada!') }
-        format.xml  { render :xml => @tweet, :status => :created, :location => @tweet }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @tweet.errors, :status => :unprocessable_entity }
-      end
-    end
-
+    @tweet = Tweet.new(params[:tweet]) 
     client.update @tweet
+
+    redirect_to root_url
   end
 
   def destroy

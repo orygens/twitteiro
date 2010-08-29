@@ -1,2 +1,0 @@
-class SessoesController < ApplicationController
-end

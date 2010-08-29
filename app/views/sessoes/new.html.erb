@@ -5,4 +5,6 @@
   <p>Mais poderoso que email marketing!</p>
 </div>
 
-<%= link_to 'Entre com seu Twitter', root_path , :class => 'botao' %>
+<% form_tag sessions_path do %>
+  <p><%= image_submit_tag 'login.png' %></p>
+<% end %>

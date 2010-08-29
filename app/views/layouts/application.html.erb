@@ -23,6 +23,12 @@
 </script>
 </head>
 <body>
+  <% if signed_in? %>
+    <div class='topmenu'>
+      Olá, <%= client %>, <%= link_to 'Perfil', root_url %>, <%= link_to 'Sair', sessions_url, :method => :delete %>
+    </div>
+  <% end %>
+
   <div class='logo'>
     <h1>TWITTEIRO</h1><p>Mobilize seus clientes no Twitter</p>
   </div>
