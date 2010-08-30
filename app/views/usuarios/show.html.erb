@@ -1,4 +1,11 @@
-<p> 
-  <b>Twitteiro:</b>
-  <%= @usuario.name %>
-</p>
+<div class='usuario'>
+  <h2><%= @usuario.name %> (<%= @usuario.screen_name %>) </h2>
+  <p><%= auto_link @usuario.description %></p>
+  <p class='usuario_stats'>
+    <% unless @usuario.location.blank? %>
+      <b><%= @usuario.location %></b>
+    <% end %>
+    <%= @usuario.friends_count %> Seguindo
+    <%= @usuario.followers_count %> Seguidores 
+  </p>
+</div>

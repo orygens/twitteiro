@@ -1,5 +1,6 @@
 class UsuariosController < ApplicationController
-  respond_to :html, :json, :atom
+  respond_to :html, :xml
+  before_filter :authenticate
   
   def index
     @usuarios = Usuario.all
@@ -7,7 +8,7 @@ class UsuariosController < ApplicationController
   end
 
   def show
-    @usuario = Usuario.find(params[:id])
-    respond_with @usuario
+    @tweets = client.user_timeline(:id => params[:id])
+    @usuario = client.user(params[:id])
   end
 end

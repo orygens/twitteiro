@@ -5,7 +5,6 @@ Twitteiro::Application.routes.draw do
   resources :tweets
   resources :usuarios
 
-  #match '/:id',    :to => 'usuarios#show'
   match 'admin',   :to => 'admin#index'
   match 'sobre',   :to => 'info#sobre'
   match 'faq',     :to => 'info#faq'
