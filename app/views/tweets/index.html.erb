@@ -1,10 +1,12 @@
+<% title 'Início' %>  
 <h3> Mensagems cadastradas </h3>
 <div class="mensagens">
   <table>
     <% @tweets.each do |tweet| %>
       <tr>
         <td><%= tweet.tweet %></td>
-        <td><%= link_to 'Deletar', tweet, :confirm => 'Tem certeza? Isso é permanente.', :method => :delete %></td>
+        <td><%= link_to 'editar', edit_tweet_path(tweet) %></td>
+        <td><%= link_to 'excluir', tweet, :confirm => 'Tem certeza? Isso é permanente.', :method => :delete %></td>
       </tr>
     <% end %>
   </table>

@@ -22,7 +22,6 @@ textarea {width:630px;max-width:630px;max-height:40px;height: 40px;resize:none; 
 input:hover, textarea:hover, input:focus, textarea:focus {border-color: #c9c9c9;-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;border-radius: 5px;-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;}
 .form label { margin-left: 10px;color: #999999;}
-#contato {width:374px;text-align:right;} 
 .actions input {font-size:16px;}
 .submit input {
 	width: auto;
@@ -46,6 +45,7 @@ label {font-size:14px;}
 p.usuario_stats {text-align: right;}
 .logo p {font-size:14px;color:green;}
 .logo h1 {font-weight: bold;}
+#contagem {display:block; position:absolute; left:-240px; width:210px; padding:12px 30px 0 0; text-align:right; font-size:60px; font-weight:bold; color:#eee;}
 .container {padding: 9px;}
 .rodape p {font-family: arial; font-weight: bold;float:left; font-size:14px;font-family: Sans serif;}
 .rodape p.copy {float:right; font-size:14px;font-family: Sans serif;border-left:none;}

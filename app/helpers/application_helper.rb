@@ -10,4 +10,8 @@ module ApplicationHelper
   <meta name='revisit' content='1 days' /> 
   <meta name='robots' content='ALL' />"
   end
+
+  def title(page_title)
+    content_for(:title) { page_title }
+  end
 end
