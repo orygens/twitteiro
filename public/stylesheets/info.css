@@ -12,17 +12,24 @@ input, textarea {
 	background: #ffffff;
 	background: -webkit-gradient(linear, left top, left 25, from(#ffffff), color-stop(4%, #eeeeee), to(#ffffff));
 	background: -moz-linear-gradient(top, #ffffff, #eeeeee 1px, #ffffff 25px);
-	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
-	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
-	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
-  border-radius: 6px;
+	border-radius: 6px;
   -moz-border-radius: 6px;
 	-webkit-border-radius: 6px;}
-textarea {width:630px;max-width:630px;max-height:80px;height: 80px;line-height: 120%;}
+textarea {width:630px;max-width:630px;max-height:80px;height: 80px;resize:none;line-height: 120%;}
 input:hover, textarea:hover, input:focus, textarea:focus {border-color: #c9c9c9;-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;border-radius: 6px;-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;}
 .form label { margin-left: 10px;color: #999999;}
-#contato {width:374px;text-align:right;}
+#contato {width:304px;}
+#contato input {height:40px; font-size: 20px;}
+#contato textarea, input, select {
+	width:300px;
+	height:24px;
+	margin-bottom:16px;}
+#contato textarea{
+	height:120px;
+	font-size:16px;
+	margin-bottom:30px}
+
 .actions input {font-size:16px;}
 .submit input {
 	width: auto;

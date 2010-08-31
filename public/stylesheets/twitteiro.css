@@ -15,12 +15,12 @@ input, textarea {
 	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
 	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
 	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
-  border-radius: 6px;
-  -moz-border-radius: 6px;
-	-webkit-border-radius: 6px;}
-textarea {width:630px;max-width:630px;max-height:80px;height: 80px;line-height: 150%;}
-input:hover, textarea:hover, input:focus, textarea:focus {border-color: #c9c9c9;-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;border-radius: 6px;-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;}
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;}
+textarea {width:630px;max-width:630px;max-height:40px;height: 40px;resize:none; line-height: 150%;}
+input:hover, textarea:hover, input:focus, textarea:focus {border-color: #c9c9c9;-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;border-radius: 5px;-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;}
 .form label { margin-left: 10px;color: #999999;}
 #contato {width:374px;text-align:right;} 
 .actions input {font-size:16px;}
