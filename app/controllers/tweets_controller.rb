@@ -3,6 +3,7 @@ class TweetsController < ApplicationController
   respond_to :html, :xml
 
   def index
+    params[:page] ||= 1
     @tweet = Tweet.new
     respond_with @tweets = Tweet.all
   end
@@ -10,6 +11,12 @@ class TweetsController < ApplicationController
   def create
     @tweet = Tweet.new(params[:tweet]) 
     client.update @tweet
+
+    options = {}
+    options.update(:in_reply_to_status_id => params[:in_reply_to_status_id]) if params[:in_reply_to_status_id].present?
+
+    tweet = client.update(params[:text], options)
+    flash[:notice] = 'Mensagem tuitada!'
     redirect_to root_path
   end
 
