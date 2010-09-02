@@ -8,9 +8,11 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+  
   <div class='logo'>
-    <h1>TWITTEIRO</h1><p>Mobilize seus clientes no Twitter</p>
+    <%= link_to image_tag('logo.png'), root_path %><p>Mobilize seus clientes no Twitter</p>
   </div>
+
   <%= yield %>
 
 <br>
