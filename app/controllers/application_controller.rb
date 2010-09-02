@@ -30,6 +30,10 @@ class ApplicationController < ActionController::Base
   end
   helper_method :client
 
+  def profile
+    @profile = Twitter::Base.new(oauth).verify_credentials
+  end
+  
   def force_sign_in(exception)
     reset_session
     flash[:error] = 'Parece que suas credenciais expiraram. Favor entre novamente.'

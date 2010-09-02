@@ -5,9 +5,5 @@ class Usuario
     permalink
   end 
 
-  embeds_many :tweets
-
   validates_numericality_of :vezes, :integer
-  validates_uniqueness_of   :username
-  validates_presence_of     :username
 end
