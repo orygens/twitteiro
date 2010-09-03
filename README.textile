@@ -18,10 +18,7 @@ h2. Tarefas do app
 
 h2. TO-DO
 
-* Adicionar páginas: 'FAQ', 'Sobre', 'Contato', 'Privacidade' e 'Termos de Uso'.
-* Criar interface de usuário.
 * Criar sistema de autenticação pra o admin.
 * Mostrar toda a informação necessária ao administrador.
-* Criar /username do usuário logo após autenticação.
 
 h3. ©2010 Orygens.com. Todos os direitos reservados.

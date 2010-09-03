@@ -7,10 +7,6 @@ class ApplicationController < ActionController::Base
   helper :all
   rescue_from Twitter::Unauthorized, :with => :force_sign_in
 
-  def usuario_atual
-    Usuario.find session[:usuario]
-  end
-
   def admin?
     unless current_user && current_user.id == 1
       flash[:error] = "Por favor, logue como administrador."
@@ -30,10 +26,6 @@ class ApplicationController < ActionController::Base
   end
   helper_method :client
 
-  def profile
-    @profile = Twitter::Base.new(oauth).verify_credentials
-  end
-  
   def force_sign_in(exception)
     reset_session
     flash[:error] = 'Parece que suas credenciais expiraram. Favor entre novamente.'
