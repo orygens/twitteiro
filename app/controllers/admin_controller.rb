@@ -10,10 +10,10 @@ class AdminController < ApplicationController
     admin = Admin.find_by_password(params[:password])
     if admin
       session[:user] = user.id
-      flash[:message] = "Administrador logado!"
+      flash[:message] = 'Administrador logado!'
       redirect_to admin_path
     else
-      flash[:warning] = "Senha incorreta, tente de novo, administrador."
+      flash[:warning] = 'Senha incorreta, tente de novo, administrador.'
       redirect_to admin_path
     end
   end

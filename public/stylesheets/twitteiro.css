@@ -3,11 +3,7 @@ body, ol, ul, td {font-family: verdana, arial, helvetica, sans-serif;font-size:1
 h1 {font-family:Helvetica;font-size:45px;color:#23a0c2;}
 p {font-family:Sans-serif;font-size: 17px;}
 img {border:none;}
-input, textarea {
-  padding: 10px;
-	border: solid 1px #e5e5e5;
-	outline: 0;
-	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+input, textarea {padding: 10px;border:solid 1px #e5e5e5;outline:0;font:normal 13px/100% Verdana, Tahoma, sans-serif;
 	width: 150px;
 	background: #ffffff;
 	background: -webkit-gradient(linear, left top, left 25, from(#ffffff), color-stop(4%, #eeeeee), to(#ffffff));
@@ -24,15 +20,7 @@ input:hover, textarea:hover, input:focus, textarea:focus {border-color: #c9c9c9;
 #update label {font-size:16px;color: #000;}
 #update countdown {display:block; position:absolute;width:210px;text-align:right;font-size:60px;font-weight:bold;color:#eee;}
 .actions input {font-size:16px;}
-.submit input {
-	width: auto;
-	padding: 6px 12px;
-	background: #617798;
-	border: 0;
-	font-size: 18px;
-	color: #FFFFFF;
-	cursor: pointer;
-}
+.submit input {width: auto;padding: 6px 12px;background:#617798;border: 0;font-size: 18px;color:#FFFFFF;cursor: pointer;}
 a {color: gray;}
 a:hover {background-color:#edece9;}
 .topmenu {font-size:14px; display: inline;text-align: right;float:right;padding:10px;width: 250px;border:1px solid #fff;margin:20px;background-color:#fff;border-radius:7px;-webkit-border-radius:7px;-moz-border-radius:7px;}
@@ -52,9 +40,4 @@ p.usuario_stats {text-align: right;}
 .rodape a:hover {background-color:#e8e8e8; text-decoration:underline;}
 .dados {text-align:center;}
 .field, div.actions {margin-bottom: 10px;}
-pre {background-color: #eee;padding: 10px;font-size: 11px;}
 #notice {color: green;}
-.field_with_errors {padding:2px;background-color:red;display:table;}
-#error_explanation {width:450px;border:2px solid red;padding:7px;padding-bottom:0;margin-bottom:20px;background-color:#f0f0f0;}
-#error_explanation h2 {text-align: left;font-weight: bold;padding: 5px 5px 5px 15px;font-size: 12px;margin: -7px;margin-bottom: 0px;background-color: #c00;color: #fff;}
-#error_explanation ul li {font-size: 12px;list-style: square;}

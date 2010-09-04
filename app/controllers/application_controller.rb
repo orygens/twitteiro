@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
 
   def admin?
     unless current_user && current_user.id == 1
-      flash[:error] = "Por favor, logue como administrador."
+      flash[:error] = 'Por favor, logue como administrador.'
       redirect_to root_path
     end
   end

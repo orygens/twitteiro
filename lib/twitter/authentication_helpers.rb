@@ -23,6 +23,7 @@ module Twitter
 
       def sign_in(profile)
         session[:screen_name] = profile.screen_name if profile
+        session[:profile_image_url] = profile.profile_image_url if profile
       end
 
       def redirect_back_or(default)

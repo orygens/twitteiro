@@ -8,15 +8,14 @@
     <h3>Tweets Cadastrados (Retwittados):</h3>
   </div>
 <% else %>
-  <% form_for @admin do |f| %>
-  <%= f.error_messages %>
-
+  <% form_tag admin_url, :method => :post do %>
+  
   <p>
-    <%= f.label :password,"Senha" %><br />
-    <%= f.password_field :password %>
+    <%= label :password, 'Senha' %><br />
+    <%= password_field :password, 'Senha' %>
   </p>
   <p>
-    <%= f.submit 'Entrar' %>
+    <%= submit_tag 'Entrar' %>
   </p>
 <% end %>
 <% end %>
