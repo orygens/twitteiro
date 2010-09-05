@@ -1,10 +1,13 @@
 <% title 'Início' %>  
 <div class='usuario'>
-  <h2><%= image_tag session[:profile_image_url], :size => '70x70' %> <%= session[:screen_name] %></h2>
+  <h2><%= image_tag session[:profile_image_url], :size => '70x70' %> <%= link_to "#{session[:screen_name]}", "http://twitter.com/#{session[:screen_name]}" %></h2>
   <p><%= auto_link session[:bio] %></p>
   <p class='usuario_stats'>
-    <b><%= session[:location] %></b> | <%= session[:friends_count] %> Seguindo | <%= session[:followers_count] %> Seguidores </p> 
-  </div>
+    <% unless session[:location].blank? %>
+      <b><%= session[:location] %></b> | 
+    <% end %>
+    <%= session[:friends_count] %> Seguindo | <%= session[:followers_count] %> Seguidores </p>
+</div>
 
   <h3> Mensagems cadastradas </h3>
   <div class='mensagens'>

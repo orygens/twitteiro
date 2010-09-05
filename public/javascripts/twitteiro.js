@@ -1,5 +1,9 @@
+$(document).ready(function() {
+  $('#text').focus();
+});
+
 $(document).ready(function(){
-    $("#new_tweet").validate();
+    $("#text").validate();
   });
 
 

@@ -1,6 +1,6 @@
 <% title 'Perfil de ' + @usuario.screen_name %>  
 <div class='usuario'>
-  <h2><%= image_tag @usuario.profile_image_url, :size => '70x70' %> <%= @usuario.screen_name %></h2>
+  <h2><%= image_tag @usuario.profile_image_url, :size => '70x70' %> <%= link_to "#{@usuario.screen_name}", "http://twitter.com/#{@usuario.screen_name}" %></h2>
   <p><%= auto_link @usuario.description %></p>
   <p class='usuario_stats'>
     <% unless @usuario.location.blank? %>
