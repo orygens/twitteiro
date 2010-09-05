@@ -1,15 +1,15 @@
 <% title 'Perfil de ' + @usuario.screen_name %>  
 <div class='usuario'>
-  <h2><%= @usuario.name %> (<%= @usuario.screen_name %>) </h2>
+  <h2><%= image_tag @usuario.profile_image_url, :size => '70x70' %> <%= @usuario.screen_name %></h2>
   <p><%= auto_link @usuario.description %></p>
   <p class='usuario_stats'>
     <% unless @usuario.location.blank? %>
-      <b><%= @usuario.location %></b>
+      <b><%= @usuario.location %></b> | 
     <% end %>
-    <%= @usuario.friends_count %> Seguindo
+    <%= @usuario.friends_count %> Seguindo | 
     <%= @usuario.followers_count %> Seguidores 
   </p>
 </div>
 <div class='chamada'>
   <p> Olá <%= session[:screen_name] %>, </p>
-  <p> Participe da nossa campanha! Através do Twitter você pode nos ajudar a divulgar nossas ideias através de mensagens de apoio ou Retweets </p>
+  <p> Participe da nossa campanha! Com o Twitter você pode nos ajudar a divulgar nossas ideias através de mensagens de apoio ou Retweets</p>

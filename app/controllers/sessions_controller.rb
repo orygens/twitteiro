@@ -19,6 +19,12 @@ class SessionsController < ApplicationController
     oauth.authorize_from_request(session['rtoken'], session['rsecret'], params[:oauth_verifier])
 
     profile = Twitter::Base.new(oauth).verify_credentials
+    session[:profile_image_url] = profile.profile_image_url
+    session[:friends_count]     = profile.friends_count
+    session[:followers_count]   = profile.followers_count
+    session[:statuses_count]    = profile.statuses_count
+    session[:location]          = profile.location
+    session[:bio]               = profile.description
     session['rtoken'] = session['rsecret'] = nil
     session[:atoken] = oauth.access_token.token
     session[:asecret] = oauth.access_token.secret

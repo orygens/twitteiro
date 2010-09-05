@@ -8,12 +8,14 @@ input, textarea {padding:10px;border:solid 1px #e5e5e5;outline:0;font:normal 13p
 	background:-moz-linear-gradient(top, #ffffff, #eeeeee 1px, #ffffff 25px);
 	box-shadow:rgba(0,0,0, 0.1) 0px 0px 8px;-moz-box-shadow:rgba(0,0,0, 0.1) 0px 0px 8px;-webkit-box-shadow:rgba(0,0,0, 0.1) 0px 0px 8px;
   border-radius:5px;-moz-border-radius:5px;-webkit-border-radius: 5px;}
+input.login {width:200px;}
 textarea {width:515px;max-width:515px;max-height:40px;height:40px;resize:none;line-height:150%;}
 input:hover, textarea:hover, input:focus, textarea:focus {border-color: #c9c9c9;-webkit-box-shadow:rgba(0, 0, 0, 0.15) 0px 0px 8px;border-radius:5px;-moz-border-radius:5px;
 	-webkit-border-radius:5px;}
 #update label {font-size:16px;color:#000;}
 #update countdown {display:block;position:absolute;width:210px;text-align:right;font-size:60px;font-weight:bold;color:#eee;}
 .actions input {font-size:16px;}
+.input.tuitar {}
 .submit input {width:auto;padding:6px 12px;background:#617798;border:0;font-size:18px;color:#ffffff;cursor: pointer;}
 a {color:gray;}
 a:hover {background-color:#edece9;}
@@ -23,7 +25,7 @@ a:hover {background-color:#edece9;}
 .mensagens {width:750px;}
 .mensagens td {font-size:16px;}
 .mensagens a {font-size:10px;}
-.usuario {background-color:#f0ebf0;border:1px solid #e3e3e3;padding:22px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
+.usuario {background-color:#f0ebf0;border:1px solid #e3e3e3;padding:13px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
 p.usuario_stats {text-align: right;}
 .logo p {font-size:14px;color:green;}
 .logo h1 {font-weight:bold;}
