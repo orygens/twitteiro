@@ -1,4 +1,7 @@
-pt-BR:
+pt_BR:
+  hello: "Olá mundo"
+  teste: "O i18n modo pt_BR está funcionando!"
+
   mail_form:
     models:
       contact_form: "Formulário de contato"
@@ -7,13 +10,13 @@ pt-BR:
         email: "E-mail"
         message: "Enviar mensagem"
     request:
-      title: "Technical information about the user"
-      remote_ip: "IP Address"
-      user_agent: "Browser" 
+      title: "Informação do usuário"
+      remote_ip: "Endereço IP"
+      user_agent: "Browser"
 
   helpers:
     submit: 
-      create: "Tweetar!"
+      create: "Tuitar!"
 
   date:
     formats:
