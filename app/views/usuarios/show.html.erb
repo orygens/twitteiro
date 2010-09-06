@@ -13,3 +13,16 @@
 <div class='chamada'>
   <p> Olá <%= session[:screen_name] %>, </p>
   <p> Participe da nossa campanha! Com o Twitter você pode nos ajudar a divulgar nossas ideias através de mensagens de apoio ou Retweets</p>
+</div>
+
+<div id='mensagens_de_apoio'>
+  <h4>MENSAGENS DE APOIO</h4>
+  <p> Autorizo a publicar no meu Twitter (<b>@<%= session[:screen_name] %></b>) conteúdo de apoio e notícias de <%= @usuario.name %> com a seguinte frequência: </p>
+  <%= link_to 'Cancelar Mensagens de Apoio' %>
+</div>
+
+<div id='retweets'>
+  <h4> RETWEETS </h4>
+  <p> Autorizo a utilizar meu Twitter (<b>@<%= session[:screen_name] %></b>) para retuitar as mensagens de <%= @usuario.name %> com a seguinte frequência: </p>
+  <%= link_to 'Cancelar Retweets' %>
+</div>

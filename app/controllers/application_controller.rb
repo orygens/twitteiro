@@ -1,18 +1,13 @@
 require 'twitter/authentication_helpers'
+require "#{Rails.root}/vendor/plugins/twitter-text-rb/lib/twitter-text"
 class ApplicationController < ActionController::Base
-  include Twitter::AuthenticationHelpers 
-  
+  include Twitter::AuthenticationHelpers
+  include Twitter::Autolink
+  include Twitter::Extractor
   protect_from_forgery
   layout 'application'
   helper :all
   rescue_from Twitter::Unauthorized, :with => :force_sign_in
-
-  def admin?
-    unless current_user && current_user.id == 1
-      flash[:error] = 'Por favor, logue como administrador.'
-      redirect_to root_path
-    end
-  end
 
   private
 
