@@ -1,8 +1,4 @@
 require 'spec_helper'
-
-# Specs in this file have access to a helper object that includes
-# the AdminHelper. For example:
-#
 # describe AdminHelper do
 #   describe "string concat" do
 #     it "concats two strings with spaces" do
@@ -11,5 +7,5 @@ require 'spec_helper'
 #   end
 # end
 describe AdminHelper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  pending 'adicionar testes do Helper (admin)'
 end

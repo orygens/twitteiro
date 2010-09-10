@@ -1,8 +1,7 @@
 require 'test_helper'
 
 class TweetTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
+  test 'a verdade' do
     assert true
   end
 end

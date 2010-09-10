@@ -11,5 +11,5 @@ require 'spec_helper'
 #   end
 # end
 describe SessionsHelper do
-  pending "Adicionar os testes"
+  pending 'Adicionar os testes'
 end

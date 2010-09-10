@@ -1,6 +1,6 @@
-require "spec_helper"
+require 'spec_helper'
 
 describe TweetsController do
-  describe "rotas" do
+  describe 'rotas' do
   end
 end

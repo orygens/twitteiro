@@ -1,5 +1,5 @@
 require 'spec_helper'
 
 describe UsuariosHelper do
-  pending "Adicionar alguns exemplos em #{__FILE__}"
+  pending 'Adicionar testes do Helper (usuarios)'
 end

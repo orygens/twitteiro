@@ -5,18 +5,13 @@ class TweetsControllerTest < ActionController::TestCase
     @tweet = tweets(:one)
   end
 
-  test "should get index" do
+  test 'deve renderizar view index' do
     get :index
     assert_response :success
     assert_not_nil assigns(:tweets)
   end
 
-  test "should get new" do
-    get :new
-    assert_response :success
-  end
-
-  test "should create tweet" do
+  test 'deve criar tweet' do
     assert_difference('Tweet.count') do
       post :create, :tweet => @tweet.attributes
     end
@@ -24,7 +19,7 @@ class TweetsControllerTest < ActionController::TestCase
     assert_redirected_to tweet_path(assigns(:tweet))
   end
 
-  test "should destroy tweet" do
+  test 'deve destruir mensagem' do
     assert_difference('Tweet.count', -1) do
       delete :destroy, :id => @tweet.to_param
     end
