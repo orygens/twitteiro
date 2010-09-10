@@ -10,6 +10,7 @@ group :development, :test do
   gem 'thin'
   gem 'mail_form'
   gem 'twitter'
+  gem 'autotest'
   gem 'rspec-rails', '2.0.0.beta.20'
   gem 'mongoid-rspec'
   gem 'shoulda'
