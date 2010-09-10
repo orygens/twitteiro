@@ -1,9 +1,8 @@
-source 'http://rubygems.org'
-
-gem 'rails', '3.0.0'
-gem 'wirble'
+source :rubygems
 
 group :development, :test do
+  gem 'rails', '3.0.0'
+  gem 'wirble'
   gem 'json'
   gem 'bson_ext'
   gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git' 
@@ -17,9 +16,10 @@ group :development, :test do
 end
 
 group :production do
+  gem 'rails', '3.0.0'
   gem 'passenger'
   gem 'json'
-  gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git"'
+  gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git'
   gem 'mongoid_session_store'
   gem 'mail_form'
   gem 'twitter'

@@ -11,9 +11,9 @@ h2. Tarefas do app
 * rake about - Mostra informações do ambiente do projeto.
 * rake stats - Mostra estatísticas do código do app.
 * rake routes - Mostra todas as urls do app.
-* rake spec - Executa a suíte de testes com RSpec.
-* rake test - Executa a suíte de testes com Test::Unit e Shoulda.
+* rake test - Executa a suíte de testes (TDD) com Test::Unit e Shoulda.
 * rake doc:app - Gera documentação pra o código do app. Execute se achar necessário.
 * rails c - Abre um console interativo do Ruby com o aplicativo carregado.
+* autotest (ou bundle exec autotest) - Executa a suíte de testes (BDD) com RSpec.
 
 h3. ©2010 Orygens.com. Todos os direitos reservados.
