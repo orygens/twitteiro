@@ -1,1 +1,1 @@
-Mongoid.add_language("pt")
+Mongoid.add_language('pt')

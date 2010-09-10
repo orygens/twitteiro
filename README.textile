@@ -16,9 +16,4 @@ h2. Tarefas do app
 * rake doc:app - Gera documentação pra o código do app. Execute se achar necessário.
 * rails c - Abre um console interativo do Ruby com o aplicativo carregado.
 
-h2. TO-DO
-
-* Criar sistema de autenticação pra o admin.
-* Mostrar toda a informação necessária ao administrador.
-
 h3. ©2010 Orygens.com. Todos os direitos reservados.

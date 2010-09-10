@@ -6,7 +6,7 @@ gem 'wirble'
 group :development, :test do
   gem 'json'
   gem 'bson_ext'
-  gem 'mongoid', '2.0.0.beta.17'
+  gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git' 
   gem 'mongoid_session_store'
   gem 'thin'
   gem 'mail_form'
@@ -19,7 +19,7 @@ end
 group :production do
   gem 'passenger'
   gem 'json'
-  gem 'mongoid', '2.0.0.beta.17'
+  gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git"'
   gem 'mongoid_session_store'
   gem 'mail_form'
   gem 'twitter'
