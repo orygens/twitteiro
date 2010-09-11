@@ -1,4 +1,3 @@
-# -*- encoding:utf-8 -*-
 class Contato < MailForm::Base
   attribute :nome,      :validate => true, :captcha => true
   attribute :email,     :validate => /[^@]+@[^\.]+\.[\w\.\-]+/
@@ -6,7 +5,7 @@ class Contato < MailForm::Base
   
   def headers
     {
-      :subject => "Nova mensagem: Formulário de contato do Twitteiro",
+      :subject => "Nova mensagem: Form de contato do Twitteiro",
       :to => "rafael.jacinto@gmail.com",
       :from => %("#{nome}" <#{email}>)
     }

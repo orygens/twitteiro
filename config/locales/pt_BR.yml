@@ -4,7 +4,7 @@ pt_BR:
 
   mail_form:
     models:
-      contact_form: "Formulário de contato"
+      contact_form: "Formulário de contato do Twitteiro"
     attributes:
       contact_form:
         email: "E-mail"

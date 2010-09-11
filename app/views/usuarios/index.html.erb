@@ -1,9 +1,0 @@
-<% title 'Usuários' %>  
-<%= auto_discovery_link_tag(:rss, url_options = {}, tag_options = {:title => "Twitteiro - Feed dos Usuários"}) %>
-<h2> Usuários </h2>
-<% @usuarios.each do |usuario| %>
-  <tr>
-    <td><%= usuario.username %></td>
-    <td><%= usuario.name %></td>
-  </tr>
-<% end %>

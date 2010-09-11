@@ -9,6 +9,7 @@ group :development, :test do
   gem 'mongoid_session_store'
   gem 'thin'
   gem 'mail_form'
+  gem 'simple_form'
   gem 'twitter'
   gem 'autotest'
   gem 'rspec-rails', '2.0.0.beta.20'
@@ -22,5 +23,6 @@ group :production do
   gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git'
   gem 'mongoid_session_store'
   gem 'mail_form'
+  gem 'simple_form'
   gem 'twitter'
 end
