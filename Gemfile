@@ -13,7 +13,6 @@ group :development, :test do
   gem 'twitter'
   gem 'autotest'
   gem 'rspec-rails', '2.0.0.beta.20'
-  gem 'mongoid-rspec'
 end
 
 group :production do

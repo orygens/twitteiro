@@ -1,9 +1,7 @@
 class Usuario
   include Mongoid::Document
-  
-  def to_param
-    permalink
-  end 
 
-  validates_numericality_of :vezes, :integer
+  field :vezes, :type => Integer
+  embeds_many :tweets
+  validates_numericality_of :vezes
 end

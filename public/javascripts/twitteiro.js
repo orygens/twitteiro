@@ -4,8 +4,7 @@ $(document).ready(function() {
 
 $(document).ready(function(){
     $("#text").validate();
-  });
-
+});
 
 jQuery.extend(String.prototype, {
   databaseId: function() { return $.trim(this.split('_').last()); }
@@ -33,29 +32,8 @@ jQuery(function($) {
     countdown.text(allowed - length);
     
     if (length == 0) {
-      $('#in_reply_to_status_id').val('');
       var label = $('label[for=text]')
       label.text(label.data('original_text'));
     }
-  });
-  
-  $('a.dm').click(function() {
-    window.scrollTo(0, 0);
-    $('#text').focus().val('d ' + $(this).attr('rel') + ' ');
-    return false;
-  });
-  
-  var label = $('label[for=text]')
-  label.data('original_text', label.text());
-  
-  $('a.reply').click(function() {
-    window.scrollTo(0, 0);
-    var pieces = $(this).attr('rel').split(':');
-    var screen_name = pieces[0];
-    var id = pieces[1];
-    $('#text').focus().val('@' + screen_name + ' ');
-    $('#in_reply_to_status_id').val(id);
-    $('label[for=text]').text('Replying to ' + screen_name + "'s tweet #" + id);
-    return false;
   });
 });

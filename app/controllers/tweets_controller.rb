@@ -15,6 +15,7 @@ class TweetsController < ApplicationController
     tweet = client.update(params[:text], options)
     flash[:notice] = 'Mensagem tuitada!'
     redirect_to root_path
+    flash[:notice] = 'Mensagem salva!'
   end
 
   def edit

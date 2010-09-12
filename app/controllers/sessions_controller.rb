@@ -25,9 +25,9 @@ class SessionsController < ApplicationController
     session[:statuses_count]    = profile.statuses_count
     session[:location]          = profile.location
     session[:bio]               = profile.description
-    session['rtoken'] = session['rsecret'] = nil
-    session[:atoken] = oauth.access_token.token
-    session[:asecret] = oauth.access_token.secret
+    session['rtoken']           = session['rsecret'] = nil
+    session[:atoken]            = oauth.access_token.token
+    session[:asecret]           = oauth.access_token.secret
 
     sign_in(profile)
     redirect_back_or root_path

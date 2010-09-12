@@ -16,8 +16,9 @@
       <% @tweets.each do |tweet| %>
         <tr>
           <td><%= tweet.tweet %></td>
+          <td><%= link_to 'tuitar' %>
           <td><%= link_to 'editar', edit_tweet_path(tweet) %></td>
-          <td><%= link_to 'excluir', tweet, :confirm => 'Tem certeza? Isso é permanente.', :method => :delete %></td>
+          <td><%= link_to 'excluir', tweet, :confirm => 'Tem certeza? Isso é definitivo.', :method => :delete %></td> 
         </tr>
       <% end %>
     </table>
