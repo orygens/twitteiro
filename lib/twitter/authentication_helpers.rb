@@ -18,7 +18,7 @@ module Twitter
 
       def deny_access
         store_location
-        render :template => '/sessions/new', :status => :unauthorized
+        render '/sessions/new', :status => :unauthorized
       end
 
       def sign_in(profile)
