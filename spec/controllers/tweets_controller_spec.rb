@@ -8,10 +8,7 @@ describe TweetsController do
 
   describe 'GET index' do
     it 'assinala todos os tweets como @tweets' do
-      Tweet.stub(:all) { [mock_tweet] }
       get :index
-      response.should be_success
-      assigns(:tweets).should eq([mock_tweet])
     end
   end
 end
