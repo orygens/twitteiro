@@ -10,7 +10,6 @@
 *.DS_Store
 .bundle
 .data
-*.rspec
 db/*.sqlite3
 log/*.log
 tmp/**/*
