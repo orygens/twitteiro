@@ -14,7 +14,8 @@ module Twitteiro
 
     config.generators do |g|
       g.template_engine  :erb
-      g.test_framework   :test_unit, :fixture => true
+      g.test_framework   :rspec, :fixture => true, :views => false
+      g.integration_tool :rspec, :fixture => true, :views => true 
       g.integration_tool :rspec
     end
   end
