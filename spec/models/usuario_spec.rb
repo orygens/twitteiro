@@ -1,5 +1,9 @@
+# -*- encoding:utf-8 -*-
 require 'spec_helper'
 
 describe Usuario do
-  pending 'teste do model Usuario pendente'
+  describe 'Specs do model `Usuario`' do
+    it 'specs' do
+    end
+  end
 end

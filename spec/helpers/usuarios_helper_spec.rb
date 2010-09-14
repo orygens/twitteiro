@@ -1,5 +1,9 @@
+# -*- encoding:utf-8 -*- 
 require 'spec_helper'
 
 describe UsuariosHelper do
-  pending 'Adicionar testes do Helper (usuarios)'
+  describe 'Specs do Helper `usuarios`' do
+    it 'Testa os Helpers' do
+    end
+  end
 end

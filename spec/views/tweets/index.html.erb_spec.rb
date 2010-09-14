@@ -1,7 +1,8 @@
+# -*- encoding:utf-8 -*-
 require 'spec_helper'
 
-describe 'tweets/index.html.erb' do
+describe 'Specs de tweets/index.html.erb' do
   
-  it 'mostra pagina inicial aos usuarios autenticados' do
+  it 'mostra pagina inicial aos usuários autenticados' do
   end
 end

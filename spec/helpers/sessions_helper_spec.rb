@@ -1,15 +1,9 @@
-require 'spec_helper'
+# -*- encoding:utf-8 -*-
+require 'spec_helper' 
 
-# Specs in this file have access to a helper object that includes
-# the SessionsHelper. For example:
-#
-# describe SessionsHelper do
-#   describe "string concat" do
-#     it "concats two strings with spaces" do
-#       helper.concat_strings("this","that").should == "this that"
-#     end
-#   end
-# end
 describe SessionsHelper do
-  pending 'Adicionar os testes'
+  describe 'Specs do Helper `sessions` ' do
+    it 'Testa os Helpers' do
+    end
+  end
 end

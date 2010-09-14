@@ -4,9 +4,10 @@ class TweetsController < ApplicationController
 
   def index
     params[:page] ||= 1
+    @tweet = Tweet.new
     @tweets = Tweet.all
-    @mensagens = client.friends_timeline(:page => params[:page])
-    respond_with @tweets, @mensagens
+    #@mensagens = client.friends_timeline(:page => params[:page])
+    respond_with @tweet, @tweets 
   end
 
   def create

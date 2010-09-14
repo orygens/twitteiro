@@ -7,7 +7,7 @@ describe TweetsController do
     end
 
     it 'reconhece e gera #edit' do
-      pending
+      { :get => '/tweets' }
     end
   end
 end
