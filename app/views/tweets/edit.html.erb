@@ -1,19 +1,4 @@
 <% title 'Editando mensagem' %>
 
-<% if signed_in? %>
-  <div id='update'>
-    <% form_tag tweets_url, :method => :post do %>
-      <%= hidden_field_tag 'in_reply_to_status_id' %>
-      <div class='field'>
-        <label for='text'>Atualizar mensagem</label><br/>
-        <%= text_area_tag 'text' %>
-        Faltam <span id='countdown'>140</span> Caracteres
-        <div class='actions'>
-          <%= submit_tag 'Tuitar!' %>
-        </div>
-    </div>
-    <% end %>
-    </div>
-  <% end %>
-
-<%= link_to 'Voltar', root_path %>
+<%= render 'form' %>
+<%= link_to 'Voltar', tweets_path %>

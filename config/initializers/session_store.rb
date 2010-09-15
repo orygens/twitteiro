@@ -1,3 +1,8 @@
-Rails.application.config.session_store :cookie_store, :key => '_twitteiro_session'
-require 'mongoid_session_store/mongoid_store'
-Twitteiro::Application.config.session_store :mongoid_store
+# Be sure to restart your server when you modify this file.
+
+Twitteiro::Application.config.session_store :cookie_store, :key => '_twitteiro_session'
+
+# Use the database for sessions instead of the cookie-based default,
+# which shouldn't be used to store highly confidential information
+# (create the session table with "rake db:sessions:create")
+# Twitteiro::Application.config.session_store :active_record_store

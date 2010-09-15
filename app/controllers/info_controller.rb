@@ -6,7 +6,6 @@ class InfoController < ApplicationController
   end
 
   def contato
-    @contato = Contato.new
   end
 
   def privacidade

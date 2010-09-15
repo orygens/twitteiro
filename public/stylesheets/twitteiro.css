@@ -12,8 +12,10 @@ input.login {width:200px;}
 textarea {width:515px;max-width:515px;max-height:40px;height:40px;resize:none;line-height:150%;}
 input:hover, textarea:hover, input:focus, textarea:focus {border-color: #c9c9c9;-webkit-box-shadow:rgba(0, 0, 0, 0.15) 0px 0px 8px;border-radius:5px;-moz-border-radius:5px;
 	-webkit-border-radius:5px;}
+select {height:35px;background-color:#fff;border:solid 1px #fff;}
 #update label {font-size:16px;color:#000;}
 #update countdown {display:block;position:absolute;width:210px;text-align:right;font-size:60px;font-weight:bold;color:#eee;}
+#notice {background-color:#fff;color:green;}
 .actions input {font-size:16px;}
 .input.tuitar {}
 .submit input {width:auto;padding:6px 12px;background:#617798;border:0;font-size:18px;color:#ffffff;cursor: pointer;}
@@ -23,7 +25,7 @@ a:hover {background-color:#edece9;}
 .topmenu a {background-color: none;text-decoration:none;color:green;}
 .topmenu a:hover {background-color:#fff;text-decoration:underline;}
 .mensagens {width:750px;}
-.mensagens td {font-size:16px;}
+.mensagens td {font-size:18px;padding:4px;}
 .mensagens a {font-size:10px;}
 .usuario {background-color:#f0ebf0;border:1px solid #e3e3e3;padding:8px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
 .usuario a {color:#296ec2;font-size:25px;text-decoration:none;}
@@ -34,7 +36,6 @@ p.usuario_stats {text-align: right;}
 .container {padding:9px;}
 .dados {text-align:center;}
 .field, div.actions {margin-bottom:10px;}
-#notice {color:green;}
 #mensagens_de_apoio {float:left; width:560px;background-color:#f0ebf0;border:1px solid #e3e3e3;padding:8px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
 #retweets {float:right; width:560px;background-color:#f0ebf0;border:1px solid #e3e3e3;padding:8px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
 .rodape p {font-family: arial; font-weight:bold;float:left;font-size:14px;font-family: Sans serif;}

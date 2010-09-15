@@ -1,15 +1,25 @@
-<% if signed_in? %>
-  <div id='update'>
-    <% form_tag tweets_url, :method => :post do %>
-      <%= hidden_field_tag 'in_reply_to_status_id' %>
-      <div class='field'>
-        <label for='text'>Cadastrar nova mensagem</label><br/>
-        <%= text_area_tag 'text' %>
-        Faltam <span id='countdown'>140</span> Caracteres
-        <div class='actions'>
-          <%= submit_tag 'Cadastrar', :class => 'tuitar' %>
-        </div>
-    </div>
-    <% end %>
+<div id='update'>
+<%= form_for(@tweet) do |f| %>
+  <% if @tweet.errors.any? %>
+    <div id='error_explanation'>
+      <h2><%= pluralize(@tweet.errors.count, 'erro') %> impediram esse Tweet de ser salvo:</h2>
+
+      <ul>
+      <% @tweet.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
     </div>
   <% end %>
+
+  <div class='field'>
+    <%= f.label :tweet %><br />
+    <%= f.text_area :tweet, :id => 'text' %>
+    Faltam <span id='countdown'>140</span> Caracteres
+  </div>
+  
+  <div class='actions'>
+    <%= f.submit %>
+  </div>
+<% end %>
+</div>
