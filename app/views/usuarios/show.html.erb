@@ -18,11 +18,25 @@
 <div id='mensagens_de_apoio'>
   <h4>MENSAGENS DE APOIO</h4>
   <p> Autorizo a publicar no meu Twitter (<b>@<%= session[:screen_name] %></b>) conteúdo de apoio e notícias de <%= @usuario.name %> com a seguinte frequência: </p>
+  <select name='frequencia'>
+    <option value='1'> 4 Horas </option>
+    <option value='2'> 6 Horas </option>
+    <option value='3'> 12 Horas</option>
+    <option value='4'> 24 Horas</option>
+    <option value='5' selected='48'> 48 Horas </option>
+  </select> 
   <%= link_to 'Cancelar Mensagens de Apoio' %>
 </div>
 
 <div id='retweets'>
   <h4> RETWEETS </h4>
   <p> Autorizo a utilizar meu Twitter (<b>@<%= session[:screen_name] %></b>) para retuitar as mensagens de <%= @usuario.name %> com a seguinte frequência: </p>
+  <select name='frequencia'>
+    <option value='1'> 4 Horas </option>
+    <option value='2'> 6 Horas </option>
+    <option value='3'> 12 Horas</option>
+    <option value='4'> 24 Horas</option>
+    <option value='5' selected='48'> 48 Horas </option>
+  </select>
   <%= link_to 'Cancelar Retweets' %>
 </div>

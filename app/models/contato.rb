@@ -4,10 +4,6 @@ class Contato < MailForm::Base
   attribute :mensagem
   
   def headers
-    {
-      :subject => "Nova mensagem: Form de contato do Twitteiro",
-      :to => "rafael.jacinto@gmail.com",
-      :from => %("#{nome}" <#{email}>)
-    }
+    {:subject => "Nova mensagem: Form de contato do Twitteiro", :to => "rafael.jacinto@gmail.com", :from => %("#{nome}" <#{email}>)}
   end
 end
