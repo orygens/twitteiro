@@ -1,3 +1,3 @@
 class Usuario < ActiveRecord::Base
-  validates_presence_of :vezes
+  has_one :frequencia
 end
