@@ -2,15 +2,6 @@ pt_BR:
   hello: 'Olá mundo'
   teste: 'O i18n modo pt_BR está funcionando!'
   
-  simple_form:
-    'sim': 'Sim'
-    'não': 'Não'
-    required:
-      text: 'necessário'
-      mark: '*'
-  error_notification:
-    default_message: 'Alguns erros foram encontrados, por favor veja:'
-
   mail_form:
     models:
       contact_form: 'Formulário de contato do Twitteiro'

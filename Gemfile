@@ -3,6 +3,7 @@ source :rubygems
 group :development, :test do
   gem 'rails', '3.0.0'
   gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'resque'
   gem 'wirble'
   gem 'json'
   gem 'mail_form'
@@ -18,6 +19,7 @@ end
 group :production do
   gem 'rails', '3.0.0'
   gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'resque'
   gem 'passenger', '3.0.0.pre1'
   gem 'json'
   gem 'mail_form'

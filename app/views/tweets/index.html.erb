@@ -9,12 +9,14 @@
     <%= session[:friends_count] %> Seguindo | <%= session[:followers_count] %> Seguidores
   </p>
 </div>
+<br>
+<br>
 <div id='notice'><%= notice %></div>
 
   <h3> Mensagems cadastradas </h3>
   <div class='mensagens'>
     <table>
-      <% @tweets.each do |tweet| %>
+      <% for tweet in @tweets %>
         <tr>
           <td><%= tweet.tweet %></td>
           <td><%= link_to 'tuitar' %>
@@ -25,5 +27,4 @@
     </table>
   </div>
   <br/>
-
-<%= render 'form' %>
+  <%= render 'form' %>

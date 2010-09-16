@@ -29,7 +29,7 @@ class TweetsController < ApplicationController
     @tweet  = Tweet.new(params[:tweet])
     if @tweet.save
       cookies[:_tweet_mensagem] = @tweet.id
-      flash[:notice] = 'Tweet foi salvo!'
+      flash[:notice] = 'Mensagem salva!'
     end
 
     redirect_to root_path
@@ -38,7 +38,7 @@ class TweetsController < ApplicationController
   def update
     @tweet = Tweet.find(params[:id])
     if @tweet.update_attributes(params[:tweet])
-      flash[:notice] = 'Tweet atualizado!'
+      flash[:notice] = 'Mensagem atualizada!'
     end
     redirect_to root_path
   end
