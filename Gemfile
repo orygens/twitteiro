@@ -20,7 +20,7 @@ group :production do
   gem 'rails', '3.0.0'
   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'delayed_job', '2.1.0.pre2'
-  gem 'passenger', '3.0.0.pre1'
+  gem 'passenger', '3.0.0.pre2'
   gem 'json'
   gem 'mail_form'
   gem 'twitter'
