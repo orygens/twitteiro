@@ -10,7 +10,7 @@ group :development, :test do
   gem 'twitter'
   gem 'autotest'
   gem 'rspec-rails', '2.0.0.beta.22'
-  gem 'steak', :git => 'http://github.com/cavalle/steak.git'
+  gem 'steak', '1.0.0.beta.2'
   gem 'capybara', :git => 'http://github.com/jnicklas/capybara.git'
   gem 'selenium-webdriver'
   gem 'launchy' 
