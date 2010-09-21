@@ -5,6 +5,11 @@ Twitteiro::Application.routes.draw do
   resources :tweets
   resources :usuarios
 
+  resource :tweets, :controller => 'tweets' do
+    post :tweet
+    post :retweet
+  end
+      
   match 'admin',   :to => 'admin#index'
   match 'sobre',   :to => 'info#sobre'
   match 'faq',     :to => 'info#faq'

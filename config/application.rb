@@ -12,6 +12,7 @@ module Twitteiro
     config.filter_parameters += [:password]
 
     config.generators do |g|
+      g.orm              :active_record
       g.template_engine  :erb
       g.test_framework   :rspec, :fixture => true, :views => false
       g.integration_tool :rspec, :fixture => true, :views => true

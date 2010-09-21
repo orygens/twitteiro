@@ -2,6 +2,12 @@ class TweetsController < ApplicationController
   before_filter :authenticate
   respond_to :html, :xml
 
+  def deliver
+    Delayed::Job.enqueue(RetweetingJob.new(params[:id]))
+    redirect_to root_path
+    flash[:notice] = 'Tudo pronto!'
+  end
+  
   def index
     params[:page] ||= 1
     @tweets = Tweet.all
@@ -14,6 +20,9 @@ class TweetsController < ApplicationController
     client.update @tweet
     redirect_to root_path
     flash[:notice] = 'Mensagem tuitada!'
+  end
+
+  def retuitar
   end
 
   def new
@@ -31,7 +40,6 @@ class TweetsController < ApplicationController
       cookies[:_tweet_mensagem] = @tweet.id
       flash[:notice] = 'Mensagem salva!'
     end
-
     redirect_to root_path
   end
 

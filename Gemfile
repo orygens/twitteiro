@@ -18,7 +18,7 @@ end
 
 group :production do
   gem 'rails', '3.0.0'
-  gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'mysql2'
   gem 'delayed_job', '2.1.0.pre2'
   gem 'passenger', '3.0.0.pre3'
   gem 'json'

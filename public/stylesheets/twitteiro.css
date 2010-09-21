@@ -15,7 +15,7 @@ input:hover, textarea:hover, input:focus, textarea:focus {border-color: #c9c9c9;
 select {height:35px;background-color:#fff;border:solid 1px #fff;}
 #update label {font-size:16px;color:#000;}
 #update countdown {display:block;position:absolute;width:210px;text-align:right;font-size:60px;font-weight:bold;color:#eee;}
-#notice {background-color:#fff;color:green;}
+#notice {padding: 5px 8px;margin: 10px 0;background-color: #CFC;border: solid 1px #6C6;}
 .actions input {font-size:16px;}
 .input.tuitar {}
 .submit input {width:auto;padding:6px 12px;background:#617798;border:0;font-size:18px;color:#ffffff;cursor: pointer;}
