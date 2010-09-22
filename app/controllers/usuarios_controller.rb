@@ -3,9 +3,8 @@ class UsuariosController < ApplicationController
   before_filter :authenticate
 
   def show
-    @tweets = client.user_timeline(:id => params[:id])
-    @usuario = client.user(params[:id])
+    @tweets = client.user_timeline :id => params[:id]
+    @usuario = client.user params[:id]
     respond_with @tweets, @usuario
   end
-
 end

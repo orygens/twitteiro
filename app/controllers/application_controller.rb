@@ -12,12 +12,12 @@ class ApplicationController < ActionController::Base
   private
 
   def oauth
-    @oauth ||= Twitter::OAuth.new('i8ukFgmyn53USKo3yy78Q', '0GnyTJoqVCTDWtRXYqFy30gTPP4qW4dEAlJheKKEGtI', :sign_in => true)
+    @oauth ||= Twitter::OAuth.new 'i8ukFgmyn53USKo3yy78Q', '0GnyTJoqVCTDWtRXYqFy30gTPP4qW4dEAlJheKKEGtI', :sign_in => true
   end
 
   def client
-    oauth.authorize_from_access(session[:atoken], session[:asecret])
-    Twitter::Base.new(oauth)
+    oauth.authorize_from_access session[:atoken], session[:asecret]
+    Twitter::Base.new oauth
   end
   helper_method :client
 

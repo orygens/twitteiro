@@ -29,7 +29,7 @@ class SessionsController < ApplicationController
     session[:atoken]            = oauth.access_token.token
     session[:asecret]           = oauth.access_token.secret
 
-    sign_in(profile)
+    sign_in profile
     redirect_back_or root_path
   end
 end
