@@ -1,14 +1,2 @@
 <% title 'Contato' %>
 <h2>Contato</h2>
-
-<div id='contato'>
-  <%= form_for @contato, :url => contato_path do |f| %>
-    <label for='nome'>Nome</label> 
-    <%= f.text_field :nome %>
-    <label for='email'>Seu email</label>
-    <%= f.text_field :email %>
-    <label for='mensagem'>Mensagem</label>
-    <%= f.text_area :mensagem %>
-    <%= f.submit 'Enviar' %>
-  <% end %>
-</div>
