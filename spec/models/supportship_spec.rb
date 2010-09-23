@@ -1,5 +1,9 @@
+#e -*- encoding:utf-8 -*-
 require 'spec_helper'
 
 describe Supportship do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'Specs do model `Supportship`' do
+    it 'specs' do
+    end
+  end
 end

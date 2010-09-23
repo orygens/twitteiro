@@ -8,5 +8,8 @@ describe ApplicationHelper do
 
     it 'faz funcionar o método title' do
     end
+
+    it 'garante que os outros helpers funcionam' do
+    end
   end
 end
