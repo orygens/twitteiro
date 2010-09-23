@@ -23,7 +23,7 @@
 
   <%= form_tag '/supportships/create' do %>
     <%= collection_select :supportship , :frequency , [ ['48 Horas','48'],['24 Horas','24'] , ['12 Horas','12'] , ['6 Horas','6'] , ['4 Horas','4'] ] , :last , :first %>
-    <%= text_field_tag :user_id , @usuario.id %>
+    <%= text_field_tag :user_id , @usuario.id, :style => 'display:none' %>
     <%= submit_tag 'Autorizar' %>
     <% for supportship in Supportship.where(:user_id == session[:id]) %>
       <%= link_to 'Parar de apoiar', destroy_support_url(:id => supportship.id) %>
