@@ -15,6 +15,13 @@
   <div id='notice'><%= notice %></div>
 <% end %>
 
+  <div id='apoiando'> 
+    <h3> Apoiando </h3>
+  <% for supportship in Supportship.where(:user_id == session[:id]) %>
+    ID DO suportado == <%= supportship.user_id %>(<%= link_to 'Parar de apoiar', destroy_support_url(:id => supportship.id)  %>)<br/>
+  <% end %> 
+  </div>
+
   <h3> Mensagems cadastradas </h3>
   <div class='mensagens'>
     <table>

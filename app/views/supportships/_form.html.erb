@@ -1,0 +1,29 @@
+<%= form_for(@supportship) do |f| %>
+  <% if @supportship.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@supportship.errors.count, "error") %> prohibited this supportship from being saved:</h2>
+
+      <ul>
+      <% @supportship.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :supporter_id %><br />
+    <%= f.text_field :supporter_id %>
+  </div>
+  <div class="field">
+    <%= f.label :frequency %><br />
+    <%= f.text_field :frequency %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

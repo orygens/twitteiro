@@ -20,9 +20,15 @@
     <h4>MENSAGENS DE APOIO</h4>
     <p> Autorizo a publicar no meu Twitter (<b>@<%= session[:screen_name] %></b>) conteúdo de apoio e notícias de <%= @usuario.name %> com a seguinte frequência:
     </p>
-  <%= select('usuario','frequencia', ['48 Horas', '24 Horas', '12 Horas', '6 Horas' , '4 Horas'], {}, { :index => nil }) %>
-  <%= submit_tag 'Autorizar' %>
-  <%= link_to 'Cancelar Mensagens de Apoio' %>
+
+  <%= form_tag '/supportships/create' do %>
+    <%= collection_select :supportship , :frequency , [ ['48 Horas','48'],['24 Horas','24'] , ['12 Horas','12'] , ['6 Horas','6'] , ['4 Horas','4'] ] , :last , :first %>
+    <%= text_field_tag :user_id , @usuario.id %>
+    <%= submit_tag 'Autorizar' %>
+    <% for supportship in Supportship.where(:user_id == session[:id]) %>
+      <%= link_to 'Parar de apoiar', destroy_support_url(:id => supportship.id) %>
+      <% end %>
+    <% end %>
   </div>
 
   <div id='retweets'>
@@ -30,6 +36,6 @@
     <p> Autorizo a utilizar meu Twitter (<b>@<%= session[:screen_name] %></b>) para retuitar as mensagens de <%= @usuario.name %> com a seguinte frequência: </p>
     <%= select('usuario','frequencia', ['48 Horas', '24 Horas', '12 Horas', '6 Horas' , '4 Horas'], {}, { :index => nil }) %>
     <%= submit_tag 'Autorizar' %>
-    <%= link_to 'Cancelar Retweets' %>
+    <%= link_to 'Parar de Retuitar' %>
   </div>
 <% end %>

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @supportship.user_id %>
+</p>
+
+<p>
+  <b>Supporter:</b>
+  <%= @supportship.supporter_id %>
+</p>
+
+<p>
+  <b>Frequency:</b>
+  <%= @supportship.frequency %>
+</p>
+
+
+<%= link_to 'Edit', edit_supportship_path(@supportship) %> |
+<%= link_to 'Back', supportships_path %>

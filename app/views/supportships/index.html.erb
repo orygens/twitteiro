@@ -1,0 +1,27 @@
+<h1>Listing supportships</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Supporter</th>
+    <th>Frequency</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @supportships.each do |supportship| %>
+  <tr>
+    <td><%= supportship.user_id %></td>
+    <td><%= supportship.supporter_id %></td>
+    <td><%= supportship.frequency %></td>
+    <td><%= link_to 'Show', supportship %></td>
+    <td><%= link_to 'Edit', edit_supportship_path(supportship) %></td>
+    <td><%= link_to 'Destroy', supportship, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Supportship', new_supportship_path %>

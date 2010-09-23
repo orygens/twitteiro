@@ -16,6 +16,7 @@ select {height:35px;background-color:#fff;border:solid 1px #fff;}
 #update label {font-size:16px;color:#000;}
 #update countdown {display:block;position:absolute;width:210px;text-align:right;font-size:60px;font-weight:bold;color:#eee;}
 #notice {padding: 5px 8px;margin: 10px 0;background-color: #CFC;border: solid 1px #6C6;}
+#apoiando {float:right;background-color:#f0ebf0;border:1px solid #e3e3e3;padding:8px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
 .actions input {font-size:16px;}
 .input.tuitar {}
 .submit input {width:auto;padding:6px 12px;background:#617798;border:0;font-size:18px;color:#ffffff;cursor: pointer;}

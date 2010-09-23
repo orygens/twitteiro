@@ -1,6 +1,9 @@
 Twitteiro::Application.routes.draw do
   root :to => 'tweets#index'
-  
+
+  post 'supportships/create'
+  get 'supportships/destroy' , :as => :destroy_support
+
   resource  :sessions
   resources :tweets
   resources :usuarios
