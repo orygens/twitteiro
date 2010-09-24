@@ -25,7 +25,7 @@
 <body>
   <% if signed_in? %>
     <div class='topmenu'>
-      Olá, <b><%= session[:screen_name] %></b>! <%= link_to 'Perfil', "/usuarios/#{session[:screen_name]}" %> <%= link_to 'Sair', sessions_url, :method => :delete %>
+      Olá, <b><%= link_to "#{session[:screen_name]}", "/usuarios/#{session[:screen_name]}", :class=> 'perfil' %></b>! <%= link_to 'Sair', sessions_url, :method => :delete %>
     </div>
   <% end %>
 
@@ -41,5 +41,7 @@
 <div class='rodape'>
   <p><%= link_to 'sobre', sobre_path %> <%= link_to 'faq', faq_path %> <%= link_to 'contato', contato_path %> <%= link_to 'privacidade', privacidade_path %> <%= link_to 'termos', termos_path %> </p><p class='copy'> &copy; 2010 Orygens.com. Todos os direitos reservados.</p>
 </div>
+<br>
+<br>
 </body>
 </html>

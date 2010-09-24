@@ -7,8 +7,7 @@ group :development, :test do
   gem 'wirble'
   gem 'json'
   gem 'mail_form'
-  gem 'twitter'
-  gem 'autotest'
+  gem 'twitter', '0.9.9'
   gem 'rspec-rails', '2.0.0.beta.22'
   gem 'steak', '1.0.0.beta.2'
   gem 'capybara', :git => 'http://github.com/jnicklas/capybara.git'
@@ -23,5 +22,5 @@ group :production do
   gem 'passenger', '3.0.0.pre3'
   gem 'json'
   gem 'mail_form'
-  gem 'twitter'
+  gem 'twitter', '0.9.9'
 end

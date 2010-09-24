@@ -15,6 +15,10 @@ class TweetsController < ApplicationController
     respond_with @tweets, @tweet
   end
 
+  def apoio
+    @frequencia = Supportship.find(params[:id])
+  end
+
   def tuitar
     @tweet = Tweet.find params[:id]
     client.update @tweet

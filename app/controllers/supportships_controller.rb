@@ -1,3 +1,4 @@
+# -*- encoding:utf-8 -*-
 class SupportshipsController < ApplicationController
   def create
     @supportship = Supportship.new
@@ -7,12 +8,12 @@ class SupportshipsController < ApplicationController
     if @supportship.save
       redirect_to root_url , :notice => 'Apoiando!'
     else
-      redirect_to root_url , :notice => 'Oops! Falha ao adicionar suporte'
+      redirect_to root_url , :notice => 'Oops! Falha ao adicionar suporte.'
     end
   end
 
   def destroy
     Supportship.where(:id => params[:id]).first.destroy
-    redirect_to root_url , :notice => 'Apoio retirado'
+    redirect_to root_url , :notice => 'Você parou de apoiar.'
   end
 end

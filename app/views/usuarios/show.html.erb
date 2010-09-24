@@ -6,20 +6,17 @@
     <% unless @usuario.location.blank? %>
       <b><%= @usuario.location %></b> | 
     <% end %>
-    <%= @usuario.friends_count %> Seguindo | 
-    <%= @usuario.followers_count %> Seguidores 
-  </p>
+    <%= @usuario.friends_count %> Seguindo | <%= @usuario.followers_count %> Seguidores </p>
 </div>
 <% if session[:screen_name] != @usuario.screen_name %>
   <div class='chamada'>
-    <p> Olá <%= session[:screen_name] %>, </p>
+    <p> Olá <%= session[:screen_name] %>,</p>
     <p> Participe da nossa campanha! Com o Twitter você pode nos ajudar a divulgar nossas ideias através de mensagens de apoio ou Retweets</p>
   </div>
 
   <div id='mensagens_de_apoio'>
     <h4>MENSAGENS DE APOIO</h4>
-    <p> Autorizo a publicar no meu Twitter (<b>@<%= session[:screen_name] %></b>) conteúdo de apoio e notícias de <%= @usuario.name %> com a seguinte frequência:
-    </p>
+    <p> Autorizo a publicar no meu Twitter (<b>@<%= session[:screen_name] %></b>) conteúdo de apoio e notícias de <%= @usuario.name %> com a seguinte frequência:</p>
 
   <%= form_tag '/supportships/create' do %>
     <%= collection_select :supportship , :frequency , [ ['48 Horas','48'],['24 Horas','24'] , ['12 Horas','12'] , ['6 Horas','6'] , ['4 Horas','4'] ] , :last , :first %>
@@ -32,8 +29,8 @@
   </div>
 
   <div id='retweets'>
-    <h4> RETWEETS </h4>
-    <p> Autorizo a utilizar meu Twitter (<b>@<%= session[:screen_name] %></b>) para retuitar as mensagens de <%= @usuario.name %> com a seguinte frequência: </p>
+    <h4>RETWEETS</h4>
+    <p> Autorizo a utilizar meu Twitter (<b>@<%= session[:screen_name] %></b>) para retuitar as mensagens de <%= @usuario.name %> com a seguinte frequência:</p>
     <%= select('usuario','frequencia', ['48 Horas', '24 Horas', '12 Horas', '6 Horas' , '4 Horas'], {}, { :index => nil }) %>
     <%= submit_tag 'Autorizar' %>
     <%= link_to 'Parar de Retuitar' %>

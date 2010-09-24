@@ -8,9 +8,10 @@ Twitteiro::Application.routes.draw do
   resources :tweets
   resources :usuarios
 
-  resource :tweets, :controller => 'tweets' do
-    post :tweet
-    post :retweet
+  resources :tweets do
+    member do
+      post :tuitar
+    end
   end
       
   match 'admin',   :to => 'admin#index'
