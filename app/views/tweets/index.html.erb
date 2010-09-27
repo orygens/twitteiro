@@ -25,7 +25,7 @@
       <% for tweet in @tweets %>
         <tr>
           <td><%= tweet.tweet %></td>
-          <td><%= link_to 'tuitar', "tuitar/#{tweet.id}" %>
+          <td><%= link_to 'tuitar' , "tuitar/#{tweet.id}" %>
           <td><%= link_to 'editar', edit_tweet_path(tweet) %></td>
           <td><%= link_to 'excluir', tweet, :confirm => 'Tem certeza? Isso é definitivo.', :method => :delete %></td> 
         </tr>

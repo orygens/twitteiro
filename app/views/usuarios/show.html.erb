@@ -25,7 +25,7 @@
     <%= submit_tag 'Autorizar' %>
     <% end %>
     <% else %>
-      Você já apoia <%= @usuario.screen_name %>. <%= link_to "Clique aqui" , destroy_support_url(:id => @supportship.id ) %> para parar de apoiar.
+      Você já apoia <%= @usuario.screen_name %>. <%= link_to 'Clique aqui', destroy_support_url(:id => @supportship.id ), :confirm => 'Tem certeza?' %> para parar de apoiar.
       <% form_tag '/supportships/update' do %>
         <%= text_field_tag :id , @supportship.id , :style => 'display:none' %>
         Mudar frequência:<%= collection_select :supportship , :frequency , [ ['48 Horas',48],['24 Horas',24] , ['12 Horas',12] , ['6 Horas',6] , ['4 Horas',4] ] , :last , :first %>

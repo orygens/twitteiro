@@ -3,66 +3,31 @@ body, ol, ul, td {font-family: verdana, arial, helvetica, sans-serif;font-size:1
 h1 {font-family:Helvetica;font-size:45px;color:#23a0c2;}
 p {font-family:Sans-serif;font-size: 17px;}
 img {border:none;}
-input, textarea {
-  padding: 10px;
-	border: solid 1px #e5e5e5;
-	outline: 0;
-	font: normal 13px/100% Verdana, Tahoma, sans-serif;
-	width: 150px;
-	background: #ffffff;
-	background: -webkit-gradient(linear, left top, left 25, from(#ffffff), color-stop(4%, #eeeeee), to(#ffffff));
-	background: -moz-linear-gradient(top, #ffffff, #eeeeee 1px, #ffffff 25px);
-	border-radius: 6px;
-  -moz-border-radius: 6px;
-	-webkit-border-radius: 6px;}
+input, textarea {padding: 10px;border:solid 1px #e5e5e5;outline: 0;font: normal 13px/100% Verdana, Tahoma, sans-serif;width: 150px;background: #ffffff;background: -webkit-gradient(linear, left top, left 25, from(#ffffff), color-stop(4%, #eeeeee), to(#ffffff));
+background: -moz-linear-gradient(top, #ffffff, #eeeeee 1px, #ffffff 25px);border-radius: 6px;-moz-border-radius: 6px;-webkit-border-radius: 6px;}
 textarea {width:630px;max-width:630px;max-height:80px;height: 80px;resize:none;line-height: 120%;}
 input:hover, textarea:hover, input:focus, textarea:focus {border-color: #c9c9c9;-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;border-radius: 6px;-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;}
 .form label { margin-left: 10px;color: #999999;}
 #contato {width:304px;}
 #contato input {height:40px; font-size: 20px;}
-#contato textarea, input, select {
-	width:300px;
-	height:24px;
-	margin-bottom:16px;}
-#contato textarea{
-	height:120px;
-	font-size:16px;
-	margin-bottom:30px}
-
+#contato textarea, input, select {width:300px;height:24px;margin-bottom:16px;}
+#contato textarea{height:120px;font-size:16px;margin-bottom:30px}
 .actions input {font-size:16px;}
-.submit input {
-	width: auto;
-	padding: 6px 12px;
-	background: #617798;
-	border: 0;
-	font-size: 18px;
-	color: #FFFFFF;
-	cursor: pointer;
-}
+.submit input {width: auto;padding: 6px 12px;background: #617798;border: 0;font-size: 18px;color: #FFFFFF;cursor: pointer;}
 a {color: gray;}
 a:hover {background-color:#edece9;}
 label {font-size:14px;}
 .topmenu {margin-right: auto; padding:5px;width: 370px;border:1px solid #fff;margin:20px;background-color:#fff;border-radius:7px;-webkit-border-radius:7px;-moz-border-radius:7px;}
-.mensagens {width:750px;}
-.mensagens td {font-size:16px;}
-.mensagens a {font-size:10px;}
+.termos_de_uso {text-align:center;display:block;margin: 40px auto 0px auto;background-color:#fff;;border:1px solid green;padding:22px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.privacidade {text-align:center;display:block;margin: 40px auto 0px auto;background-color:#fff;;border:1px solid green;padding:22px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.sobre {display:block;margin: 40px auto 0px auto;background-color:#fff;;border:1px solid green;padding:22px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.faq {display:block;margin: 40px auto 0px auto;background-color:#fff;;border:1px solid green;padding:22px;-moz-border-radius:3px;-webkit-border-radius:3px;}
 .logo p {font-size:14px;color:green;}
 .logo h1 {font-weight: bold;}
 .container {padding: 9px;}
-
 .rodape p {font-family: arial; font-weight: bold;float:left; font-size:14px;font-family: Sans serif;}
 .rodape p.copy {float:right; font-size:14px;font-family: Sans serif;border-left:none;}
 .rodape a {color:#1836ab;font-size;12px;background-color:none;text-decoration:none;}
 .rodape a:hover {background-color:#e3e3e3; text-decoration:underline;}
 .dados {text-align:center;}
-.field, div.actions {margin-bottom: 10px;}
-pre {background-color: #eee;padding: 10px;font-size: 11px;}
-.links a { font-family:sans serif; font-size: 20px;color: #666; margin:6px;}
-.links a:visited { color: #666; }
-.links a:hover {color:#fff;background-color:#23a0c2;text-decoration:none;}
-#notice {color: green;}
-.field_with_errors {padding:2px;background-color:red;display:table;}
-#error_explanation {width:450px;border:2px solid red;padding:7px;padding-bottom:0;margin-bottom:20px;background-color:#f0f0f0;}
-#error_explanation h2 {text-align: left;font-weight: bold;padding: 5px 5px 5px 15px;font-size: 12px;margin: -7px;margin-bottom: 0px;background-color: #c00;color: #fff;}
-#error_explanation ul li {font-size: 12px;list-style: square;}

@@ -1,3 +1,4 @@
+# -*- encoding:utf-8 -*-
 class TweetsController < ApplicationController
   before_filter :authenticate
   respond_to :html, :xml
@@ -43,6 +44,8 @@ class TweetsController < ApplicationController
     if @tweet.save
       cookies[:_tweet_mensagem] = @tweet.id
       flash[:notice] = 'Mensagem salva!'
+    else
+      flash[:notice] = 'Essa mensagem já existe.'
     end
     redirect_to root_path
   end
