@@ -15,8 +15,8 @@
   </div>
 
   <div id='mensagens_de_apoio'>
+     <h4>MENSAGENS DE APOIO</h4>
     <% if !@supportship %>
-    <h4>MENSAGENS DE APOIO</h4>
     <p> Autorizo a publicar no meu Twitter (<b>@<%= session[:screen_name] %></b>) conteúdo de apoio e notícias de <%= @usuario.name %> com a seguinte frequência:</p>
 
   <%= form_tag '/supportships/create' do %>
