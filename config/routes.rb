@@ -2,7 +2,9 @@ Twitteiro::Application.routes.draw do
   root :to => 'tweets#index'
 
   post 'supportships/create'
-  get 'supportships/destroy' , :as => :destroy_support
+  post 'supportships/update'
+  get  'supportships/destroy' , :as => :destroy_support
+  get 'tuitar/:id', :as => 'tuitar', :to => "tweets#tuitar"
 
   resource  :sessions
   resources :tweets

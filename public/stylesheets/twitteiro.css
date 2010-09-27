@@ -18,6 +18,8 @@ select {height:31px;background-color:#fff;border:solid 1px #fff;}
 #update countdown {display:block;position:absolute;width:210px;text-align:right;font-size:60px;font-weight:bold;color:#eee;}
 #notice {padding: 5px 8px;margin: 10px 0;background-color: #CFC;border: solid 1px #6C6;}
 #apoiando {width:300px;margin:10px;float:right;background-color:#f0ebf0;border:1px solid #e3e3e3;padding:8px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
+#apoiando a.apoiado {color:#23a0c2;text-decoration:none;}
+#apoiando a.apoiado:hover {text-decoration:underline;}
 .actions input {font-size:16px;}
 .input.tuitar {}
 .submit input {width:auto;padding:6px 12px;background:#617798;border:0;font-size:18px;color:#ffffff;cursor: pointer;}
@@ -25,7 +27,7 @@ a {color:gray;}
 a:hover {background-color:#edece9;}
 .topmenu {font-size:14px;display:inline;text-align:right;float:right;padding:10px;width:250px;border:1px solid #fff;margin:20px;background-color:#fff;border-radius:7px;-webkit-border-radius:7px;-moz-border-radius:7px;}
 .topmenu a {background-color: none;text-decoration:none;color:green;}
-.topmenu a.perfil {background-color: none;text-decoration:none;color:#296ec2;}
+.topmenu a.perfil {background-color: none;text-decoration:none;color:#23a0c2;}
 .topmenu a:hover {background-color:#fff;text-decoration:underline;}
 .mensagens {width:750px;}
 .mensagens td {font-size:18px;padding:4px;}

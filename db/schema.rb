@@ -33,9 +33,9 @@ ActiveRecord::Schema.define(:version => 20100923192906) do
   end
 
   create_table "supportships", :force => true do |t|
-    t.integer  "user_id"
-    t.integer  "supporter_id"
-    t.string   "frequency"
+    t.string   "user_name"
+    t.string   "supporter_name"
+    t.integer  "frequency"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

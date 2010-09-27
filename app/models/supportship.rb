@@ -1,6 +1,6 @@
 class Supportship < ActiveRecord::Base
-  validates_presence_of  :user_id, :supporter_id, :frequency
-  validates_inclusion_of :frequency, :in => %w(4 8 12 24 48)
+  validates_presence_of  :user_name, :supporter_name, :frequency
+  validates_inclusion_of :frequency, :in => [4, 8, 12, 24, 48]
 
   def user=(id)
     user_id = id

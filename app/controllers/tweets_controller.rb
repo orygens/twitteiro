@@ -21,7 +21,7 @@ class TweetsController < ApplicationController
 
   def tuitar
     @tweet = Tweet.find params[:id]
-    client.update @tweet
+    client.update @tweet.tweet
     redirect_to root_path
     flash[:notice] = 'Mensagem tuitada!'
   end

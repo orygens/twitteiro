@@ -1,10 +1,9 @@
 class CreateSupportships < ActiveRecord::Migration
   def self.up
     create_table :supportships do |t|
-      t.integer :user_id
-      t.integer :supporter_id
-      t.string :frequency
-
+      t.string :user_name
+      t.string :supporter_name
+      t.integer :frequency
       t.timestamps
     end
   end

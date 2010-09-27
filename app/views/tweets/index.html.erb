@@ -14,8 +14,8 @@
 <% end %>
   <div id='apoiando'> 
     <h3>Apoiando</h3>
-  <% for supportship in Supportship.where(:user_id == session[:id]) %>
-    <%= supportship.user_id %>(<%= link_to 'Parar de apoiar', destroy_support_url(:id => supportship.id), :confirm => 'Tem certeza?' %>)<br/>
+  <% for supportship in Supportship.where(:user_name == session[:screen_name]) %>
+    <%= link_to supportship.user_name, "/usuarios/#{supportship.user_name}", :class => 'apoiado'  %> (<%= link_to 'Parar de apoiar', destroy_support_url(:id => supportship.id), :confirm => 'Tem certeza?' %>)<br/>
   <% end %>
   </div>
 
@@ -25,7 +25,7 @@
       <% for tweet in @tweets %>
         <tr>
           <td><%= tweet.tweet %></td>
-          <td><%= link_to 'tuitar' %>
+          <td><%= link_to 'tuitar', "tuitar/#{tweet.id}" %>
           <td><%= link_to 'editar', edit_tweet_path(tweet) %></td>
           <td><%= link_to 'excluir', tweet, :confirm => 'Tem certeza? Isso é definitivo.', :method => :delete %></td> 
         </tr>
@@ -33,5 +33,7 @@
     </table>
   </div>
   <br/>
+  <br>
+  <br>
   <br>
   <%= render 'form' %>

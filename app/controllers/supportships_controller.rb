@@ -2,14 +2,25 @@
 class SupportshipsController < ApplicationController
   def create
     @supportship = Supportship.new
-    @supportship.user_id = params[:user_id] 
-    @supportship.supporter_id = session[:id] 
+    @supportship.user_name = params[:user_name] 
+    @supportship.supporter_name = session[:screen_name] 
     @supportship.frequency = params[:supportship][:frequency]
     if @supportship.save
-      redirect_to root_url , :notice => 'Apoiando!'
+      redirect_to root_url , :notice => "Apoiando #{@supportship.user_name}!"
     else
-      redirect_to root_url , :notice => 'Oops! Falha ao adicionar suporte.'
+      redirect_to root_url , :notice => 'Oops! Erro ao adicionar suporte.'
     end
+  end
+
+  def update
+    @supportship = Supportship.find(params[:id])
+    @supportship.frequency = params[:supportship][:frequency]
+    if @supportship.save
+      flash[:notice] = 'Frequência atualizada!'
+    else
+      flash[:error] = 'Oops! Erro ao atualizar frequência.'
+    end
+    redirect_to root_path
   end
 
   def destroy
