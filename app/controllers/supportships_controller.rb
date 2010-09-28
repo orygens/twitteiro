@@ -8,7 +8,7 @@ class SupportshipsController < ApplicationController
     if @supportship.save
       redirect_to root_url , :notice => "Apoiando #{@supportship.user_name}!"
     else
-      redirect_to root_url , :notice => 'Oops! Erro ao adicionar suporte.'
+      redirect_to root_url , :notice => "Oops! Erro ao apoiar #{@supportship.user_name}. Por favor tente novamente mais tarde."
     end
   end
 

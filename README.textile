@@ -4,11 +4,14 @@ h2. Up and Running - Tarefas do app
 
 * λ *bundle install*   - Instala todas as dependências do app.
 * λ *passenger start*  - Inicia o servidor. Em seguida acesse "http://localhost:3000/":http://localhost:3000/
+* λ *rake db:create*   - Cria o banco.
+* λ *rake db:drop*     - Zera o banco. 
 * λ *rake db:migrate*  - Migra o banco. Usando SQlite3 em desenvolvimento.
 * λ *rake db:seed*     - Carrega os dados pré-criados em db/seeds.rb
 * λ *rake about*       - Mostra informações do ambiente do projeto.
 * λ *rake stats*       - Mostra estatísticas do código do app.
 * λ *rake jobs:work*   - Inicia as tarefas do daemon com delayed_job.
+* λ *rake jobs:clear*  - Deleta todos os jobs na lista.
 * λ *rake routes*      - Mostra todas as urls do app.
 * λ *rake spec*        - Executa a suíte de testes (BDD) com RSpec.
 * λ *rails c*          - Abre um console interativo do Ruby com o aplicativo carregado.

@@ -20,7 +20,7 @@ select {height:31px;background-color:#fff;border:solid 1px #fff;}
 #apoiando {width:300px;margin:10px;float:right;background-color:#f0ebf0;border:1px solid #e3e3e3;padding:8px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
 #apoiando a.apoiado {color:#23a0c2;text-decoration:none;}
 #apoiando a.apoiado:hover {text-decoration:underline;}
-.actions input {font-size:16px;}
+.actions input {font-size:16px;background:#FA2 url(../images/tweet.png) repeat-x 0px 0px;}
 .input.tuitar {}
 .submit input {width:auto;padding:6px 12px;background:#617798;border:0;font-size:18px;color:#ffffff;cursor: pointer;}
 a {color:gray;}
@@ -31,7 +31,8 @@ a:hover {background-color:#edece9;}
 .topmenu a:hover {background-color:#fff;text-decoration:underline;}
 .mensagens {width:750px;}
 .mensagens td {font-size:18px;padding:4px;}
-.mensagens a {font-size:13px;}
+.mensagens a {font-size:13px;text-decoration:none;}
+.mensagens a:hover {color:#fa1;}
 .usuario {background-color:#f0ebf0;border:1px solid #e3e3e3;padding:8px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
 .usuario a {color:#296ec2;font-size:25px;text-decoration:none;}
 .usuario a:hover {text-decoration:underline;}
@@ -47,4 +48,3 @@ p.usuario_stats {text-align: right;margin-top:2px;}
 .rodape p.copy {float:right; font-size:14px;font-family: Sans serif;border-left:none;}
 .rodape a {color:#1836ab;font-size;12px;background-color:none;text-decoration:none;}
 .rodape a:hover {background-color:#e8e8e8; text-decoration:underline;}
-
