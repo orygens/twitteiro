@@ -11,7 +11,7 @@ class TweetsController < ApplicationController
   
   def index
     params[:page] ||= 1
-    @tweets = Tweet.all
+    @tweets = Tweet.where :user_id => session[:id] 
     @tweet = Tweet.new
     respond_with @tweets, @tweet
   end
@@ -41,6 +41,7 @@ class TweetsController < ApplicationController
 
   def create
     @tweet  = Tweet.new params[:tweet]
+    @tweet.user_id = session[:id]
     if @tweet.save
       cookies[:_tweet_mensagem] = @tweet.id
       flash[:notice] = 'Mensagem salva!'
@@ -52,6 +53,7 @@ class TweetsController < ApplicationController
 
   def update
     @tweet = Tweet.find params[:id]
+    @tweet.user_id = session[:id]
     if @tweet.update_attributes params[:tweet]
       flash[:notice] = 'Mensagem atualizada!'
     end

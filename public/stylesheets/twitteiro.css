@@ -42,8 +42,10 @@ p.usuario_stats {text-align: right;margin-top:2px;}
 .container {padding:9px;}
 .dados {text-align:center;}
 .field, div.actions {margin-bottom:10px;}
-#mensagens_de_apoio {float:left;width:540px;height:145px;background-color:#f0ebf0;border:1px solid #e3e3e3;padding:8px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
-#retweets {float:right;width:540px;height:145px;background-color:#f0ebf0;border:1px solid #e3e3e3;padding:8px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
+#mensagens_de_apoio {float:left;width:530px;height:145px;background-color:#f0ebf0;border:1px solid #e3e3e3;padding:8px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
+#apoiado_por {float:right;width:530px;height:145px;background-color:#f0ebf0;border:1px solid #e3e3e3;padding:8px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
+#apoiando_ {float:left;width:530px;height:145px;background-color:#f0ebf0;border:1px solid #e3e3e3;padding:8px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
+#retweets {float:right;width:530px;height:145px;background-color:#f0ebf0;border:1px solid #e3e3e3;padding:8px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
 .rodape p {font-family: arial; font-weight:bold;float:left;font-size:14px;font-family: Sans serif;}
 .rodape p.copy {float:right; font-size:14px;font-family: Sans serif;border-left:none;}
 .rodape a {color:#1836ab;font-size;12px;background-color:none;text-decoration:none;}

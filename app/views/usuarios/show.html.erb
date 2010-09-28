@@ -44,3 +44,20 @@
     <%= link_to 'Parar de Retuitar' %>
   </div>
 <% end %>
+  <div id='apoiado_por'>
+    <h3> Apoiado por </h3>
+    <ul>
+      <% for supporter in @supporters %>
+        <p><%= supporter.supporter_name %></p>
+      <% end %>
+    </ul>
+  </div>
+
+  <div id='apoiando_'>
+    <h3> Apoiando </h3>
+    <ul>
+      <% for supported in @supporteds %>
+        <p><%= supported.user_name %></p>
+      <% end %>
+    </ul>
+  </div>
