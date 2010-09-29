@@ -10,6 +10,7 @@ input, textarea {padding:10px;border:solid 1px #e5e5e5;outline:0;font:normal 13p
 	box-shadow:rgba(0,0,0, 0.1) 0px 0px 8px;-moz-box-shadow:rgba(0,0,0, 0.1) 0px 0px 8px;-webkit-box-shadow:rgba(0,0,0, 0.1) 0px 0px 8px;
   border-radius:5px;-moz-border-radius:5px;-webkit-border-radius: 5px;}
 input.login {width:200px;}
+input.login:hover {background:#f5c462;}
 textarea {width:515px;max-width:515px;max-height:40px;height:40px;resize:none;line-height:150%;}
 input:hover, textarea:hover, input:focus, textarea:focus {border-color: #c9c9c9;-webkit-box-shadow:rgba(0, 0, 0, 0.15) 0px 0px 8px;border-radius:5px;-moz-border-radius:5px;
 	-webkit-border-radius:5px;}
@@ -17,7 +18,7 @@ select {height:31px;background-color:#fff;border:solid 1px #fff;}
 #update label {font-size:16px;color:#000;}
 #update countdown {display:block;position:absolute;width:210px;text-align:right;font-size:60px;font-weight:bold;color:#eee;}
 #notice {padding: 5px 8px;margin: 10px 0;background-color: #CFC;border: solid 1px #6C6;}
-#apoiando {width:300px;margin:10px;float:right;background-color:#f0ebf0;border:1px solid #e3e3e3;padding:8px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
+#apoiando {;width:300px;margin:10px;float:right;background-color:#f0ebf0;border:1px solid #e3e3e3;padding:8px;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
 #apoiando a.apoiado {color:#23a0c2;text-decoration:none;}
 #apoiando a.apoiado:hover {text-decoration:underline;}
 .actions input {font-size:16px;background:#FA2 url(../images/tweet.png) repeat-x 0px 0px;}

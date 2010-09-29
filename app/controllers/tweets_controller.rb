@@ -28,10 +28,13 @@ class TweetsController < ApplicationController
   end
 
   def retuitar
+    client.retweet
   end
 
   def habilitar
     @tweet = Tweet.find params[:id]
+    redirect_to root_path
+    flash[:notice] = 'Mensagem habilitada para os seus apoiadores!'
   end
 
   def new
