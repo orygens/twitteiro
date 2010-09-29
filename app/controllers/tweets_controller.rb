@@ -17,7 +17,7 @@ class TweetsController < ApplicationController
   end
 
   def apoio
-    @frequencia = Supportship.find(params[:id])
+    @frequencia = Supportship.find params[:id]
   end
 
   def tuitar
@@ -28,6 +28,10 @@ class TweetsController < ApplicationController
   end
 
   def retuitar
+  end
+
+  def habilitar
+    @tweet = Tweet.find params[:id]
   end
 
   def new

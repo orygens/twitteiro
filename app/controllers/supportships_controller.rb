@@ -6,9 +6,9 @@ class SupportshipsController < ApplicationController
     @supportship.supporter_name = session[:screen_name] 
     @supportship.frequency = params[:supportship][:frequency]
     if @supportship.save
-      redirect_to root_url , :notice => "Apoiando #{@supportship.user_name}!"
+      redirect_to root_url , :notice => "Apoiando @#{@supportship.user_name}!"
     else
-      redirect_to root_url , :notice => "Oops! Erro ao apoiar #{@supportship.user_name}. Por favor tente novamente mais tarde."
+      redirect_to root_url , :notice => "Oops! Erro ao apoiar @#{@supportship.user_name}. Por favor tente novamente mais tarde."
     end
   end
 
