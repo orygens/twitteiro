@@ -1,6 +1,7 @@
 *.~
 *.#
 *~
+*.swp
 *.rbc
 *.gem
 *.lock

@@ -5,8 +5,7 @@ class TweetsController < ApplicationController
 
   def deliver
     Delayed::Job.enqueue RetweetingJob.new params[:id]
-    redirect_to root_path
-    flash[:notice] = 'Tudo pronto!'
+    redirect_to root_path, :notice => 'Tudo pronto!'
   end
   
   def index
@@ -23,8 +22,7 @@ class TweetsController < ApplicationController
   def tuitar
     @tweet = Tweet.find params[:id]
     client.update @tweet.tweet
-    redirect_to root_path
-    flash[:notice] = 'Mensagem tuitada!'
+    redirect_to root_path, :notice => 'Mensagem tuitada!'
   end
 
   def retuitar
@@ -33,8 +31,7 @@ class TweetsController < ApplicationController
 
   def habilitar
     @tweet = Tweet.find params[:id]
-    redirect_to root_path
-    flash[:notice] = 'Mensagem habilitada para os seus apoiadores!'
+    redirect_to root_path, :notice => 'Mensagem habilitada para os seus apoiadores!'
   end
 
   def new
@@ -53,7 +50,7 @@ class TweetsController < ApplicationController
       cookies[:_tweet_mensagem] = @tweet.id
       flash[:notice] = 'Mensagem salva!'
     else
-      flash[:notice] = 'Essa mensagem já existe.'
+      flash[:notice] = 'Erro ao criar mensagem.'
     end
     redirect_to root_path
   end
@@ -70,7 +67,6 @@ class TweetsController < ApplicationController
   def destroy
     @tweet = Tweet.find params[:id]
     @tweet.destroy
-    redirect_to root_path
-    flash[:notice] = 'Mensagem apagada.'
+    redirect_to root_path, :notice => 'Mensagem apagada.'
   end
 end

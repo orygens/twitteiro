@@ -13,10 +13,10 @@ class SupportshipsController < ApplicationController
   end
 
   def update
-    @supportship = Supportship.find(params[:id])
+    @supportship = Supportship.find params[:id]
     @supportship.frequency = params[:supportship][:frequency]
     if @supportship.save
-      flash[:notice] = 'Frequência atualizada!'
+      flash[:notice] = 'Frequência do seu apoio atualizada!'
     else
       flash[:error] = 'Oops! Erro ao atualizar frequência.'
     end

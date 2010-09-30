@@ -27,12 +27,10 @@ ActiveRecord::Schema.define(:version => 20100929203920) do
 
   add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
 
-  create_table "frequencias", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "retweetships", :force => true do |t|
+    t.string   "user_name"
+    t.string   "retweeter_name"
+    t.integer  "frequency"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
