@@ -9,6 +9,7 @@ Twitteiro::Application.routes.draw do
   post 'retweetships/update'
   get  'retweetships/destroy' , :as => :destroy_retweet
   get  'tuitar/:id', :as => 'tuitar', :to => "tweets#tuitar"
+  get  'habilitar', :as => 'habilitar', :to => "tweets#habilitar"
 
   resource  :sessions
   resources :tweets

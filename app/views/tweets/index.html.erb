@@ -23,7 +23,7 @@
     <table>
       <% for tweet in @tweets %>
         <tr>
-          <td><%= tweet.tweet %></td>
+          <td><%= auto_link(tweet.tweet, :target => '_blank', :username_url_base => "http://#{request.host_with_port}/users/")%></td>
           <td><%= link_to 'habilitar' %>
           <td><%= link_to 'tuitar' , "tuitar/#{tweet.id}" %>
           <td><%= link_to 'editar', edit_tweet_path(tweet) %></td>
