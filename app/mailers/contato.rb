@@ -1,5 +1,5 @@
 class Contato < ActionMailer::Base
-  default :from => "from@example.com"
+  default :from => 'from@example.com'
   default :to => 'rodrigo3n@gmail.com'
 
   def send(mensagem)

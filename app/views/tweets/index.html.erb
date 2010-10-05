@@ -14,8 +14,8 @@
 <% end %>
   <div id='apoiando'> 
     <h3>Apoiando</h3>
-    <% for supportship in Supportship.where(:user_name == session[:screen_name]) %>
-      <%= link_to supportship.user_name, "/usuarios/#{supportship.user_name}", :class => 'apoiado'  %> (<%= link_to 'Parar de apoiar', destroy_support_url(:id => supportship.id), :confirm => 'Tem certeza?' %>)<br/>
+    <% for apoio in Apoio.where(:nome_usuario == session[:screen_name]) %>
+      <%= link_to apoio.nome_usuario, "/usuarios/#{apoio.nome_usuario}", :class => 'apoiado'  %> (<%= link_to 'Parar de apoiar', desapoiar_url(:id => apoio.id), :confirm => 'Tem certeza?' %>)<br/>
     <% end %>
   </div>
   <h3>Mensagems cadastradas</h3>

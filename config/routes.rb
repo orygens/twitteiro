@@ -1,13 +1,13 @@
 Twitteiro::Application.routes.draw do
   root :to => 'tweets#index'
 
-  post 'supportships/create'
-  post 'supportships/update'
-  get  'supportships/destroy' , :as => :destroy_support
+  post 'apoios/create'
+  post 'apoios/update'
+  get  'apoios/destroy' , :as => :desapoiar
 
-  post 'retweetships/create'
-  post 'retweetships/update'
-  get  'retweetships/destroy' , :as => :destroy_retweet
+  post 'retuites/create'
+  post 'retuites/update'
+  get  'retuites/destroy' , :as => :desretuitar
   get  'tuitar/:id', :as => 'tuitar', :to => "tweets#tuitar"
   get  'habilitar', :as => 'habilitar', :to => "tweets#habilitar"
 
@@ -15,12 +15,6 @@ Twitteiro::Application.routes.draw do
   resources :tweets
   resources :usuarios
 
-  resources :tweets do
-    member do
-      post :tuitar
-    end
-  end
-      
   match 'admin',   :to => 'admin#index'
   match 'sobre',   :to => 'info#sobre'
   match 'faq',     :to => 'info#faq'

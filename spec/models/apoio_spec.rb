@@ -1,8 +1,8 @@
 #e -*- encoding:utf-8 -*-
 require 'spec_helper'
 
-describe Supportship do
-  describe 'Specs do model `Supportship`' do
+describe Apoio do
+  describe 'Specs do model `Apoio`' do
     it 'specs' do
     end
   end

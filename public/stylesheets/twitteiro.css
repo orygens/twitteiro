@@ -29,6 +29,8 @@ select {height:31px;background-color:#fff;border:solid 1px #fff;}
 .submit input {width:auto;padding:6px 12px;background:#617798;border:0;font-size:18px;color:#ffffff;cursor: pointer;}
 a {color:gray;}
 a:hover {background-color:#edece9;}
+a.botao {text-decoration:none;color:green;border-bottom-color:#5c5757;}
+a.botao:hover {text-decoration:underline;}
 .topmenu {font-size:14px;display:inline;text-align:right;float:right;padding:10px;width:250px;border:1px solid #fff;margin:20px;background-color:#fff;border-radius:7px;-webkit-border-radius:7px;-moz-border-radius:7px;}
 .topmenu a {background-color: none;text-decoration:none;color:green;}
 .topmenu a.perfil {background-color: none;text-decoration:none;color:#23a0c2;}

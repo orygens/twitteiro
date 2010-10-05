@@ -16,20 +16,20 @@
 
   <div id='mensagens_de_apoio'>
     <h4>MENSAGENS DE APOIO</h4>
-    <% if !@supportship %>
+    <% if !@apoio %>
       <p>Autorizo a publicar no meu Twitter (<b>@<%= session[:screen_name] %></b>) conteúdo de apoio e notícias de <%= @usuario.name %> com a seguinte frequência:</p>
-      <%= form_tag '/supportships/create' do %>
-        <%= collection_select :supportship , :frequency , [ ['48 Horas',48],['24 Horas',24] , ['12 Horas',12] , ['6 Horas',6] , ['4 Horas',4] ] , :last , :first %>
-        <%= text_field_tag :user_name , @usuario.screen_name , :style => 'display:none' %>
+      <%= form_tag '/apoios/create' do %>
+        <%= collection_select :apoio , :frequencia , [ ['48 Horas',48],['24 Horas',24] , ['12 Horas',12] , ['6 Horas',6] , ['4 Horas',4] ] , :last , :first %>
+        <%= text_field_tag :nome_usuario , @usuario.screen_name , :style => 'display:none' %>
         <%= submit_tag 'Autorizar' %>
       <% end %>
     <% else %>
-      <p>Você já apoia @<%= @usuario.screen_name %>. <%= link_to 'Clique aqui', destroy_support_url(:id => @supportship.id ), :confirm => 'Tem certeza?' %> para parar de apoiar.
+      <p>Você já apoia @<%= @usuario.screen_name %>. <%= link_to 'Clique aqui', desapoiar_url(:id => @apoio.id ), :class => 'botao', :confirm => 'Tem certeza?' %> para parar de apoiar.
         <br>
         <br>
-        <% form_tag '/supportships/update' do %>
-          <%= text_field_tag :id , @supportship.id , :style => 'display:none' %>
-          <p>Mudar frequência:<%= collection_select :supportship , :frequency , [ ['48 Horas',48],['24 Horas',24] , ['12 Horas',12] , ['6 Horas',6] , ['4 Horas',4] ] , :last , :first %>
+        <% form_tag '/apoios/update' do %>
+          <%= text_field_tag :id , @apoio.id , :style => 'display:none' %>
+          <p>Mudar frequência:<%= collection_select :apoio , :frequencia , [ ['48 Horas',48],['24 Horas',24] , ['12 Horas',12] , ['6 Horas',6] , ['4 Horas',4] ] , :last , :first %>
             <%= submit_tag 'Salvar' %>
           <% end %>
         <% end %>
@@ -37,20 +37,20 @@
 
   <div id='retweets'>
     <h4>RETWEETS</h4>
-    <% if !@retweetship %>
+    <% if !@retuite %>
       <p>Autorizo a utilizar meu Twitter (<b>@<%= session[:screen_name] %></b>) para retuitar as mensagens de <%= @usuario.name %> com a seguinte frequência:</p>
-      <%= form_tag '/retweetships/create' do %>
-        <%= collection_select :retweetship , :frequency , [ ['48 Horas',48],['24 Horas',24] , ['12 Horas',12] , ['6 Horas',6] , ['4 Horas',4] ] , :last , :first %>
-        <%= text_field_tag :user_name , @usuario.screen_name , :style => 'display:none' %>
+      <%= form_tag '/retuites/create' do %>
+        <%= collection_select :retuite , :frequencia , [ ['48 Horas',48],['24 Horas',24] , ['12 Horas',12] , ['6 Horas',6] , ['4 Horas',4] ] , :last , :first %>
+        <%= text_field_tag :nome_usuario , @usuario.screen_name , :style => 'display:none' %>
         <%= submit_tag 'Autorizar' %>
       <% end %>
     <% else %>
-      <p>Você já retuita @<%= @usuario.screen_name %>. <%= link_to 'Clique aqui', destroy_retweet_url(:id => @retweetship.id ), :confirm => 'Tem certeza?' %> para parar de retuitar.
+      <p>Você já retuita @<%= @usuario.screen_name %>. <%= link_to 'Clique aqui', desretuitar_url(:id => @retuite.id ), :class => 'botao', :confirm => 'Tem certeza?' %> para parar de retuitar.
         <br>
         <br>
-        <% form_tag '/retweetships/update' do %>
-          <%= text_field_tag :id , @retweetship.id , :style => 'display:none' %>
-          <p>Mudar frequência:<%= collection_select :retweetship , :frequency , [ ['48 Horas',48],['24 Horas',24] , ['12 Horas',12] , ['6 Horas',6] , ['4 Horas',4] ] , :last , :first %>
+        <% form_tag '/retuites/update' do %>
+          <%= text_field_tag :id , @retuite.id , :style => 'display:none' %>
+          <p>Mudar frequência:<%= collection_select :retuite , :frequencia , [ ['48 Horas',48],['24 Horas',24] , ['12 Horas',12] , ['6 Horas',6] , ['4 Horas',4] ] , :last , :first %>
             <%= submit_tag 'Salvar' %>
           <% end %>
         <% end %>
@@ -58,14 +58,14 @@
 <% end %>
   <div id='quem_apoia'>
     <h4>QUEM APOIA</h4>
-    <% for supporter in @supporters %>
-    <p><%= link_to "@#{supporter.supporter_name}", "/usuarios/#{supporter.supporter_name}" %></p>
+    <% for apoiador in @apoiadores %>
+    <p><%= link_to "@#{apoiador.nome_apoiador}", "/usuarios/#{apoiador.nome_apoiador}" %></p>
     <% end %>
   </div>
 
-  <div id='quem_apoia'>
+  <div id='quem_retuita'>
     <h4>QUEM RETUITA</h4>
-    <% for retweeter in @retweeters %>
-    <p><%= link_to "@#{retweeter.retweeter_name}", "/usuarios/#{retweeter.retweeter_name}" %> </p>
+    <% for retuitador in @retuitadores %>
+    <p><%= link_to "@#{retuitador.nome_retuitador}", "/usuarios/#{retuitador.nome_retuitador}" %> </p>
     <% end %>
   </div>

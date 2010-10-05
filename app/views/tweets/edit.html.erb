@@ -1,6 +1,6 @@
 <% title 'Editando mensagem' %>
 
-<% form_for(@tweet) do |f| %>
+<%= form_for(@tweet) do |f| %>
   <% if @tweet.errors.any? %>
     <div id='error_explanation'>
       <h2><%= pluralize(@tweet.errors.count, 'erro') %> impediram esse Tweet de ser salvo:</h2>

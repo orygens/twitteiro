@@ -12,6 +12,14 @@
 
 ActiveRecord::Schema.define(:version => 20100929203920) do
 
+  create_table "apoios", :force => true do |t|
+    t.string   "nome_usuario"
+    t.string   "nome_apoiador"
+    t.integer  "frequencia"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0
     t.integer  "attempts",   :default => 0
@@ -27,18 +35,10 @@ ActiveRecord::Schema.define(:version => 20100929203920) do
 
   add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
 
-  create_table "retweetships", :force => true do |t|
-    t.string   "user_name"
-    t.string   "retweeter_name"
-    t.integer  "frequency"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "supportships", :force => true do |t|
-    t.string   "user_name"
-    t.string   "supporter_name"
-    t.integer  "frequency"
+  create_table "retuites", :force => true do |t|
+    t.string   "nome_usuario"
+    t.string   "nome_retuitador"
+    t.integer  "frequencia"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
